@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A5E296162C561800E20EDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5E295162C561800E20EDE /* Cocoa.framework */; };
+		08A5E2A0162C561800E20EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08A5E29E162C561800E20EDE /* InfoPlist.strings */; };
+		08A5E2A2162C561800E20EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5E2A1162C561800E20EDE /* main.m */; };
+		08A5E2A6162C561800E20EDE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08A5E2A4162C561800E20EDE /* Credits.rtf */; };
+		08A5E2A9162C561900E20EDE /* o2jsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5E2A8162C561900E20EDE /* o2jsAppDelegate.m */; };
+		08A5E2AC162C561900E20EDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A5E2AA162C561900E20EDE /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08A5E291162C561800E20EDE /* GeneralObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5E295162C561800E20EDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08A5E298162C561800E20EDE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		08A5E299162C561800E20EDE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08A5E29A162C561800E20EDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08A5E29D162C561800E20EDE /* GeneralObjectiveC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeneralObjectiveC-Info.plist"; sourceTree = "<group>"; };
+		08A5E29F162C561800E20EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08A5E2A1162C561800E20EDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08A5E2A3162C561800E20EDE /* GeneralObjectiveC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeneralObjectiveC-Prefix.pch"; sourceTree = "<group>"; };
+		08A5E2A5162C561800E20EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		08A5E2A7162C561800E20EDE /* o2jsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = o2jsAppDelegate.h; sourceTree = "<group>"; };
+		08A5E2A8162C561900E20EDE /* o2jsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = o2jsAppDelegate.m; sourceTree = "<group>"; };
+		08A5E2AB162C561900E20EDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A5E28E162C561800E20EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5E296162C561800E20EDE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A5E286162C561800E20EDE = {
+			isa = PBXGroup;
+			children = (
+				08A5E29B162C561800E20EDE /* GeneralObjectiveC */,
+				08A5E294162C561800E20EDE /* Frameworks */,
+				08A5E292162C561800E20EDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08A5E292162C561800E20EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A5E291162C561800E20EDE /* GeneralObjectiveC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08A5E294162C561800E20EDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A5E295162C561800E20EDE /* Cocoa.framework */,
+				08A5E297162C561800E20EDE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A5E297162C561800E20EDE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A5E298162C561800E20EDE /* AppKit.framework */,
+				08A5E299162C561800E20EDE /* CoreData.framework */,
+				08A5E29A162C561800E20EDE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		08A5E29B162C561800E20EDE /* GeneralObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				08A5E2A7162C561800E20EDE /* o2jsAppDelegate.h */,
+				08A5E2A8162C561900E20EDE /* o2jsAppDelegate.m */,
+				08A5E2AA162C561900E20EDE /* MainMenu.xib */,
+				08A5E29C162C561800E20EDE /* Supporting Files */,
+			);
+			path = GeneralObjectiveC;
+			sourceTree = "<group>";
+		};
+		08A5E29C162C561800E20EDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08A5E29D162C561800E20EDE /* GeneralObjectiveC-Info.plist */,
+				08A5E29E162C561800E20EDE /* InfoPlist.strings */,
+				08A5E2A1162C561800E20EDE /* main.m */,
+				08A5E2A3162C561800E20EDE /* GeneralObjectiveC-Prefix.pch */,
+				08A5E2A4162C561800E20EDE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08A5E290162C561800E20EDE /* GeneralObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A5E2AF162C561900E20EDE /* Build configuration list for PBXNativeTarget "GeneralObjectiveC" */;
+			buildPhases = (
+				08A5E28D162C561800E20EDE /* Sources */,
+				08A5E28E162C561800E20EDE /* Frameworks */,
+				08A5E28F162C561800E20EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneralObjectiveC;
+			productName = GeneralObjectiveC;
+			productReference = 08A5E291162C561800E20EDE /* GeneralObjectiveC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08A5E288162C561800E20EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = o2js;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Volkan Ozcelik";
+			};
+			buildConfigurationList = 08A5E28B162C561800E20EDE /* Build configuration list for PBXProject "GeneralObjectiveC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08A5E286162C561800E20EDE;
+			productRefGroup = 08A5E292162C561800E20EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08A5E290162C561800E20EDE /* GeneralObjectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08A5E28F162C561800E20EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5E2A0162C561800E20EDE /* InfoPlist.strings in Resources */,
+				08A5E2A6162C561800E20EDE /* Credits.rtf in Resources */,
+				08A5E2AC162C561900E20EDE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A5E28D162C561800E20EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5E2A2162C561800E20EDE /* main.m in Sources */,
+				08A5E2A9162C561900E20EDE /* o2jsAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08A5E29E162C561800E20EDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A5E29F162C561800E20EDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08A5E2A4162C561800E20EDE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A5E2A5162C561800E20EDE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		08A5E2AA162C561900E20EDE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A5E2AB162C561900E20EDE /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08A5E2AD162C561900E20EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		08A5E2AE162C561900E20EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08A5E2B0162C561900E20EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeneralObjectiveC/GeneralObjectiveC-Prefix.pch";
+				INFOPLIST_FILE = "GeneralObjectiveC/GeneralObjectiveC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08A5E2B1162C561900E20EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeneralObjectiveC/GeneralObjectiveC-Prefix.pch";
+				INFOPLIST_FILE = "GeneralObjectiveC/GeneralObjectiveC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08A5E28B162C561800E20EDE /* Build configuration list for PBXProject "GeneralObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A5E2AD162C561900E20EDE /* Debug */,
+				08A5E2AE162C561900E20EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A5E2AF162C561900E20EDE /* Build configuration list for PBXNativeTarget "GeneralObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A5E2B0162C561900E20EDE /* Debug */,
+				08A5E2B1162C561900E20EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08A5E288162C561800E20EDE /* Project object */;
+}
