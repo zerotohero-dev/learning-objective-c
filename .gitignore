@@ -13,5 +13,5 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+.DS_Store
 
-projects/004-first-program/FirstProgram/.DS_Store
