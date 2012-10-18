@@ -3,6 +3,7 @@
  *  the terms of the MIT license.
  *  Please see the LICENSE file for details.
  */
+
 #import <Cocoa/Cocoa.h>
 
 int main(int argc, char *argv[]) {

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MemoryAndPointers' target in the 'MemoryAndPointers' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
