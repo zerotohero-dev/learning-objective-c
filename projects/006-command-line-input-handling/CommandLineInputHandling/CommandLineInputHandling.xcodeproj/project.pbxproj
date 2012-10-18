@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083CE74E162FD41B001211C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083CE74D162FD41B001211C8 /* Foundation.framework */; };
+		083CE751162FD41B001211C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CE750162FD41B001211C8 /* main.m */; };
+		083CE755162FD41B001211C8 /* CommandLineInputHandling.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 083CE754162FD41B001211C8 /* CommandLineInputHandling.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		083CE747162FD41A001211C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				083CE755162FD41B001211C8 /* CommandLineInputHandling.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		083CE749162FD41B001211C8 /* CommandLineInputHandling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineInputHandling; sourceTree = BUILT_PRODUCTS_DIR; };
+		083CE74D162FD41B001211C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		083CE750162FD41B001211C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		083CE753162FD41B001211C8 /* CommandLineInputHandling-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommandLineInputHandling-Prefix.pch"; sourceTree = "<group>"; };
+		083CE754162FD41B001211C8 /* CommandLineInputHandling.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CommandLineInputHandling.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		083CE746162FD41A001211C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083CE74E162FD41B001211C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083CE73E162FD41A001211C8 = {
+			isa = PBXGroup;
+			children = (
+				083CE74F162FD41B001211C8 /* CommandLineInputHandling */,
+				083CE74C162FD41B001211C8 /* Frameworks */,
+				083CE74A162FD41B001211C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		083CE74A162FD41B001211C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				083CE749162FD41B001211C8 /* CommandLineInputHandling */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		083CE74C162FD41B001211C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083CE74D162FD41B001211C8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		083CE74F162FD41B001211C8 /* CommandLineInputHandling */ = {
+			isa = PBXGroup;
+			children = (
+				083CE750162FD41B001211C8 /* main.m */,
+				083CE754162FD41B001211C8 /* CommandLineInputHandling.1 */,
+				083CE752162FD41B001211C8 /* Supporting Files */,
+			);
+			path = CommandLineInputHandling;
+			sourceTree = "<group>";
+		};
+		083CE752162FD41B001211C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				083CE753162FD41B001211C8 /* CommandLineInputHandling-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		083CE748162FD41A001211C8 /* CommandLineInputHandling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083CE758162FD41B001211C8 /* Build configuration list for PBXNativeTarget "CommandLineInputHandling" */;
+			buildPhases = (
+				083CE745162FD41A001211C8 /* Sources */,
+				083CE746162FD41A001211C8 /* Frameworks */,
+				083CE747162FD41A001211C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLineInputHandling;
+			productName = CommandLineInputHandling;
+			productReference = 083CE749162FD41B001211C8 /* CommandLineInputHandling */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		083CE740162FD41A001211C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Volkan Ozcelik";
+			};
+			buildConfigurationList = 083CE743162FD41A001211C8 /* Build configuration list for PBXProject "CommandLineInputHandling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 083CE73E162FD41A001211C8;
+			productRefGroup = 083CE74A162FD41B001211C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				083CE748162FD41A001211C8 /* CommandLineInputHandling */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		083CE745162FD41A001211C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083CE751162FD41B001211C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		083CE756162FD41B001211C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		083CE757162FD41B001211C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		083CE759162FD41B001211C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandLineInputHandling/CommandLineInputHandling-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		083CE75A162FD41B001211C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CommandLineInputHandling/CommandLineInputHandling-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		083CE743162FD41A001211C8 /* Build configuration list for PBXProject "CommandLineInputHandling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083CE756162FD41B001211C8 /* Debug */,
+				083CE757162FD41B001211C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083CE758162FD41B001211C8 /* Build configuration list for PBXNativeTarget "CommandLineInputHandling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083CE759162FD41B001211C8 /* Debug */,
+				083CE75A162FD41B001211C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 083CE740162FD41A001211C8 /* Project object */;
+}
