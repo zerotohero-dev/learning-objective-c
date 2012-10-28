@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjectOriented' target in the 'ObjectOriented' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

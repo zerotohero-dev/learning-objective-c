@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Structs' target in the 'Structs' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

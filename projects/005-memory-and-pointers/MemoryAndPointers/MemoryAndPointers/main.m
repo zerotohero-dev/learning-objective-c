@@ -16,7 +16,7 @@ float stuff[4] = {10.1, 11.1, 12.1, 13.1};
 // C is clever enough to guess the array size.
 float others[] = {10.1, 11.1, 12.1, 13.1};
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {    
     amounts[0] = 11.2;
     amounts[1] = 11.3;
     amounts[2] = 11.4;
