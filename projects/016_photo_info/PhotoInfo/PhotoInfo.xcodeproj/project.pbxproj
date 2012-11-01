@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08ED65F91642591E0036AAC5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08ED65F81642591E0036AAC5 /* Cocoa.framework */; };
+		08ED66031642591E0036AAC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08ED66011642591E0036AAC5 /* InfoPlist.strings */; };
+		08ED66051642591E0036AAC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED66041642591E0036AAC5 /* main.m */; };
+		08ED66091642591E0036AAC5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08ED66071642591E0036AAC5 /* Credits.rtf */; };
+		08ED660C1642591E0036AAC5 /* o2jsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED660B1642591E0036AAC5 /* o2jsAppDelegate.m */; };
+		08ED660F1642591E0036AAC5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ED660D1642591E0036AAC5 /* MainMenu.xib */; };
+		08ED6617164259820036AAC5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED6616164259820036AAC5 /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08ED65F41642591E0036AAC5 /* PhotoInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ED65F81642591E0036AAC5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		08ED65FB1642591E0036AAC5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		08ED65FC1642591E0036AAC5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08ED65FD1642591E0036AAC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08ED66001642591E0036AAC5 /* PhotoInfo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoInfo-Info.plist"; sourceTree = "<group>"; };
+		08ED66021642591E0036AAC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08ED66041642591E0036AAC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08ED66061642591E0036AAC5 /* PhotoInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoInfo-Prefix.pch"; sourceTree = "<group>"; };
+		08ED66081642591E0036AAC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		08ED660A1642591E0036AAC5 /* o2jsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = o2jsAppDelegate.h; sourceTree = "<group>"; };
+		08ED660B1642591E0036AAC5 /* o2jsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = o2jsAppDelegate.m; sourceTree = "<group>"; };
+		08ED660E1642591E0036AAC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		08ED6615164259820036AAC5 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		08ED6616164259820036AAC5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08ED65F11642591E0036AAC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ED65F91642591E0036AAC5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08ED65E91642591E0036AAC5 = {
+			isa = PBXGroup;
+			children = (
+				08ED65FE1642591E0036AAC5 /* PhotoInfo */,
+				08ED65F71642591E0036AAC5 /* Frameworks */,
+				08ED65F51642591E0036AAC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08ED65F51642591E0036AAC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08ED65F41642591E0036AAC5 /* PhotoInfo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08ED65F71642591E0036AAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08ED65F81642591E0036AAC5 /* Cocoa.framework */,
+				08ED65FA1642591E0036AAC5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08ED65FA1642591E0036AAC5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08ED65FB1642591E0036AAC5 /* AppKit.framework */,
+				08ED65FC1642591E0036AAC5 /* CoreData.framework */,
+				08ED65FD1642591E0036AAC5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		08ED65FE1642591E0036AAC5 /* PhotoInfo */ = {
+			isa = PBXGroup;
+			children = (
+				08ED660A1642591E0036AAC5 /* o2jsAppDelegate.h */,
+				08ED660B1642591E0036AAC5 /* o2jsAppDelegate.m */,
+				08ED660D1642591E0036AAC5 /* MainMenu.xib */,
+				08ED65FF1642591E0036AAC5 /* Supporting Files */,
+				08ED6615164259820036AAC5 /* Photo.h */,
+				08ED6616164259820036AAC5 /* Photo.m */,
+			);
+			path = PhotoInfo;
+			sourceTree = "<group>";
+		};
+		08ED65FF1642591E0036AAC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08ED66001642591E0036AAC5 /* PhotoInfo-Info.plist */,
+				08ED66011642591E0036AAC5 /* InfoPlist.strings */,
+				08ED66041642591E0036AAC5 /* main.m */,
+				08ED66061642591E0036AAC5 /* PhotoInfo-Prefix.pch */,
+				08ED66071642591E0036AAC5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08ED65F31642591E0036AAC5 /* PhotoInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08ED66121642591E0036AAC5 /* Build configuration list for PBXNativeTarget "PhotoInfo" */;
+			buildPhases = (
+				08ED65F01642591E0036AAC5 /* Sources */,
+				08ED65F11642591E0036AAC5 /* Frameworks */,
+				08ED65F21642591E0036AAC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoInfo;
+			productName = PhotoInfo;
+			productReference = 08ED65F41642591E0036AAC5 /* PhotoInfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08ED65EB1642591E0036AAC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = o2js;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Volkan Ozcelik";
+			};
+			buildConfigurationList = 08ED65EE1642591E0036AAC5 /* Build configuration list for PBXProject "PhotoInfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08ED65E91642591E0036AAC5;
+			productRefGroup = 08ED65F51642591E0036AAC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08ED65F31642591E0036AAC5 /* PhotoInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08ED65F21642591E0036AAC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ED66031642591E0036AAC5 /* InfoPlist.strings in Resources */,
+				08ED66091642591E0036AAC5 /* Credits.rtf in Resources */,
+				08ED660F1642591E0036AAC5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08ED65F01642591E0036AAC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ED66051642591E0036AAC5 /* main.m in Sources */,
+				08ED660C1642591E0036AAC5 /* o2jsAppDelegate.m in Sources */,
+				08ED6617164259820036AAC5 /* Photo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08ED66011642591E0036AAC5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08ED66021642591E0036AAC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		08ED66071642591E0036AAC5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08ED66081642591E0036AAC5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		08ED660D1642591E0036AAC5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08ED660E1642591E0036AAC5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08ED66101642591E0036AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		08ED66111642591E0036AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08ED66131642591E0036AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoInfo/PhotoInfo-Prefix.pch";
+				INFOPLIST_FILE = "PhotoInfo/PhotoInfo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		08ED66141642591E0036AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoInfo/PhotoInfo-Prefix.pch";
+				INFOPLIST_FILE = "PhotoInfo/PhotoInfo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08ED65EE1642591E0036AAC5 /* Build configuration list for PBXProject "PhotoInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ED66101642591E0036AAC5 /* Debug */,
+				08ED66111642591E0036AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08ED66121642591E0036AAC5 /* Build configuration list for PBXNativeTarget "PhotoInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08ED66131642591E0036AAC5 /* Debug */,
+				08ED66141642591E0036AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08ED65EB1642591E0036AAC5 /* Project object */;
+}
