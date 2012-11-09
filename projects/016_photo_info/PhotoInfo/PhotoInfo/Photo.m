@@ -1,10 +1,8 @@
-//
-//  Photo.m
-//  PhotoInfo
-//
-//  Created by Volkan Ozcelik on 11/1/12.
-//  Copyright (c) 2012 Volkan Ozcelik. All rights reserved.
-//
+/*
+ *  This program is distributed under
+ *  the terms of the MIT license.
+ *  Please see the LICENSE file for details.
+ */
 
 #import "Photo.h"
 
@@ -19,6 +17,18 @@
 + (Photo*) photo {
     Photo* newPhoto = [[Photo alloc] init];
     return [newPhoto autorelease];
+}
+
+// The NSZone class indicates a memory zone.
+// The idea is to keep related objects close together in memory
+// to increase performance.
+// You'll rarely see this in methods other than copyWithZone
+- (id) copyWithZone:(NSZone *)zone {
+    Photo* newPhoto = [[Photo allocWithZone:zone] init];
+    newPhoto.caption = self.caption;
+    newPhoto.photographer = self.photographer;
+
+    return newPhoto;
 }
 - (NSString*) caption {
     return caption;
