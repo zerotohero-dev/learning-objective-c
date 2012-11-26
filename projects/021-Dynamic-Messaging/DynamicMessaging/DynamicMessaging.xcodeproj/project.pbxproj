@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084D000516634757008D101C /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 084D000416634757008D101C /* Photo.m */; };
+		084D000816634809008D101C /* MyAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 084D000716634809008D101C /* MyAlbum.m */; };
+		084D000B16635831008D101C /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 084D000A16635831008D101C /* Cat.m */; };
+		084D000E16635849008D101C /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 084D000D16635849008D101C /* Dog.m */; };
+		084DFFF616633D88008D101C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084DFFF516633D88008D101C /* Foundation.framework */; };
+		084DFFF916633D88008D101C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DFFF816633D88008D101C /* main.m */; };
+		084DFFFD16633D88008D101C /* DynamicMessaging.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 084DFFFC16633D88008D101C /* DynamicMessaging.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		084DFFEF16633D88008D101C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				084DFFFD16633D88008D101C /* DynamicMessaging.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		084D000316634757008D101C /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		084D000416634757008D101C /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		084D000616634809008D101C /* MyAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlbum.h; sourceTree = "<group>"; };
+		084D000716634809008D101C /* MyAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlbum.m; sourceTree = "<group>"; };
+		084D000916635831008D101C /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		084D000A16635831008D101C /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		084D000C16635849008D101C /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		084D000D16635849008D101C /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		084DFFF116633D88008D101C /* DynamicMessaging */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicMessaging; sourceTree = BUILT_PRODUCTS_DIR; };
+		084DFFF516633D88008D101C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		084DFFF816633D88008D101C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		084DFFFB16633D88008D101C /* DynamicMessaging-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicMessaging-Prefix.pch"; sourceTree = "<group>"; };
+		084DFFFC16633D88008D101C /* DynamicMessaging.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DynamicMessaging.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		084DFFEE16633D88008D101C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DFFF616633D88008D101C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084DFFE616633D88008D101C = {
+			isa = PBXGroup;
+			children = (
+				084D000C16635849008D101C /* Dog.h */,
+				084D000D16635849008D101C /* Dog.m */,
+				084D000916635831008D101C /* Cat.h */,
+				084D000A16635831008D101C /* Cat.m */,
+				084D000616634809008D101C /* MyAlbum.h */,
+				084D000716634809008D101C /* MyAlbum.m */,
+				084D000316634757008D101C /* Photo.h */,
+				084D000416634757008D101C /* Photo.m */,
+				084DFFF716633D88008D101C /* DynamicMessaging */,
+				084DFFF416633D88008D101C /* Frameworks */,
+				084DFFF216633D88008D101C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		084DFFF216633D88008D101C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				084DFFF116633D88008D101C /* DynamicMessaging */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		084DFFF416633D88008D101C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084DFFF516633D88008D101C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		084DFFF716633D88008D101C /* DynamicMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				084DFFF816633D88008D101C /* main.m */,
+				084DFFFC16633D88008D101C /* DynamicMessaging.1 */,
+				084DFFFA16633D88008D101C /* Supporting Files */,
+			);
+			path = DynamicMessaging;
+			sourceTree = "<group>";
+		};
+		084DFFFA16633D88008D101C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				084DFFFB16633D88008D101C /* DynamicMessaging-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		084DFFF016633D88008D101C /* DynamicMessaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084D000016633D88008D101C /* Build configuration list for PBXNativeTarget "DynamicMessaging" */;
+			buildPhases = (
+				084DFFED16633D88008D101C /* Sources */,
+				084DFFEE16633D88008D101C /* Frameworks */,
+				084DFFEF16633D88008D101C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicMessaging;
+			productName = DynamicMessaging;
+			productReference = 084DFFF116633D88008D101C /* DynamicMessaging */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		084DFFE816633D88008D101C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Volkan Ozcelik";
+			};
+			buildConfigurationList = 084DFFEB16633D88008D101C /* Build configuration list for PBXProject "DynamicMessaging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 084DFFE616633D88008D101C;
+			productRefGroup = 084DFFF216633D88008D101C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				084DFFF016633D88008D101C /* DynamicMessaging */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084DFFED16633D88008D101C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DFFF916633D88008D101C /* main.m in Sources */,
+				084D000516634757008D101C /* Photo.m in Sources */,
+				084D000816634809008D101C /* MyAlbum.m in Sources */,
+				084D000B16635831008D101C /* Cat.m in Sources */,
+				084D000E16635849008D101C /* Dog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		084D000116633D88008D101C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicMessaging/DynamicMessaging-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		084D000216633D88008D101C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicMessaging/DynamicMessaging-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		084DFFFE16633D88008D101C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		084DFFFF16633D88008D101C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		084D000016633D88008D101C /* Build configuration list for PBXNativeTarget "DynamicMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084D000116633D88008D101C /* Debug */,
+				084D000216633D88008D101C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		084DFFEB16633D88008D101C /* Build configuration list for PBXProject "DynamicMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084DFFFE16633D88008D101C /* Debug */,
+				084DFFFF16633D88008D101C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 084DFFE816633D88008D101C /* Project object */;
+}

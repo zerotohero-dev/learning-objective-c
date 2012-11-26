@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Exceptions' target in the 'Exceptions' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

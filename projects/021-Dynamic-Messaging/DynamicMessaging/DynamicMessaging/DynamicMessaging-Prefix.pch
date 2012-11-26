@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DynamicMessaging' target in the 'DynamicMessaging' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

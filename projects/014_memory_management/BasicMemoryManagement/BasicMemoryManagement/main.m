@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
     // For example, the iPhone SDK does not support garbage collection
     
     [value release];
-    [myString release];
+    //[myString release];
     [myString2 release];
     
     // You might be tempted to manually release an autoreleased object

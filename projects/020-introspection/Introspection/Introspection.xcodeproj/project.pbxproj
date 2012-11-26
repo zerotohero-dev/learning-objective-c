@@ -10,6 +10,7 @@
 		08A85EEA164C207C000E1CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A85EE9164C207C000E1CB0 /* Foundation.framework */; };
 		08A85EED164C207C000E1CB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A85EEC164C207C000E1CB0 /* main.m */; };
 		08A85EF1164C207D000E1CB0 /* Introspection.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08A85EF0164C207D000E1CB0 /* Introspection.1 */; };
+		08C82993165D26F700C2F254 /* O2Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C82992165D26F700C2F254 /* O2Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		08A85EEC164C207C000E1CB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08A85EEF164C207D000E1CB0 /* Introspection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Introspection-Prefix.pch"; sourceTree = "<group>"; };
 		08A85EF0164C207D000E1CB0 /* Introspection.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Introspection.1; sourceTree = "<group>"; };
+		08C82991165D26F700C2F254 /* O2Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Photo.h; sourceTree = "<group>"; };
+		08C82992165D26F700C2F254 /* O2Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				08A85EEC164C207C000E1CB0 /* main.m */,
 				08A85EF0164C207D000E1CB0 /* Introspection.1 */,
 				08A85EEE164C207D000E1CB0 /* Supporting Files */,
+				08C82991165D26F700C2F254 /* O2Photo.h */,
+				08C82992165D26F700C2F254 /* O2Photo.m */,
 			);
 			path = Introspection;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A85EED164C207C000E1CB0 /* main.m in Sources */,
+				08C82993165D26F700C2F254 /* O2Photo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +240,7 @@
 				08A85EF6164C207D000E1CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
