@@ -23,5 +23,5 @@
     @property (assign, readonly) int itemCount;
 
     + (id) runningApplicationsDataGroup;
-    - (void) addItem:(id <DCDataItem>)newItem;
+    - (void) addItem:(id <O2DataItem>)newItem;
 @end

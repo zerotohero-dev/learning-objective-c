@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083CD32F16836297005D186A /* O2TextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CD32E16836297005D186A /* O2TextItem.m */; };
+		083CD333168A26D1005D186A /* NSRunningApplication-O2DataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 083CD332168A26D1005D186A /* NSRunningApplication-O2DataItem.m */; };
 		084081911672581A0012CEB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084081901672581A0012CEB3 /* Cocoa.framework */; };
 		0840819B1672581A0012CEB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 084081991672581A0012CEB3 /* InfoPlist.strings */; };
 		0840819D1672581A0012CEB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0840819C1672581A0012CEB3 /* main.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		083CD32D16836297005D186A /* O2TextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2TextItem.h; sourceTree = "<group>"; };
+		083CD32E16836297005D186A /* O2TextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2TextItem.m; sourceTree = "<group>"; };
+		083CD331168A259A005D186A /* NSRunningApplication-O2DataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRunningApplication-O2DataItem.h"; sourceTree = "<group>"; };
+		083CD332168A26D1005D186A /* NSRunningApplication-O2DataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunningApplication-O2DataItem.m"; sourceTree = "<group>"; };
 		0840818C1672581A0012CEB3 /* DataCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084081901672581A0012CEB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		084081931672581A0012CEB3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -91,6 +97,10 @@
 				084081971672581A0012CEB3 /* Supporting Files */,
 				084081AD167258D30012CEB3 /* O2DataGroup.h */,
 				084081AE167258D30012CEB3 /* O2DataGroup.m */,
+				083CD32D16836297005D186A /* O2TextItem.h */,
+				083CD32E16836297005D186A /* O2TextItem.m */,
+				083CD331168A259A005D186A /* NSRunningApplication-O2DataItem.h */,
+				083CD332168A26D1005D186A /* NSRunningApplication-O2DataItem.m */,
 			);
 			path = DataCollector;
 			sourceTree = "<group>";
@@ -175,6 +185,8 @@
 				0840819D1672581A0012CEB3 /* main.m in Sources */,
 				084081A41672581A0012CEB3 /* o2jsAppDelegate.m in Sources */,
 				084081AF167258D30012CEB3 /* O2DataGroup.m in Sources */,
+				083CD32F16836297005D186A /* O2TextItem.m in Sources */,
+				083CD333168A26D1005D186A /* NSRunningApplication-O2DataItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,7 @@
 				084081AC1672581A0012CEB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
