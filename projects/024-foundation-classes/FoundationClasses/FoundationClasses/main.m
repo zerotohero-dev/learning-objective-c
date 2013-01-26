@@ -5,6 +5,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "O2User.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -190,22 +191,22 @@ int main(int argc, const char * argv[]) {
 
         // Read/Write Files
 
-        NSString* lastLine = @"Beauty is truth, truth beauty";
-        NSString* fileName = @"GrecianUrn.txt";
-        NSString* homeDir  = NSHomeDirectory();
-        NSString* fullPath = [homeDir stringByAppendingPathComponent:fileName];
+        NSString* lastLine2 = @"Beauty is truth, truth beauty";
+        NSString* fileName2 = @"GrecianUrn.txt";
+        NSString* homeDir2  = NSHomeDirectory();
+        NSString* fullPath2 = [homeDir2 stringByAppendingPathComponent:fileName2];
 
         // atomically: write to a temp file before moving it to the location.
-        [lastLine writeToFile:fullPath atomically:NO];
+        [lastLine2 writeToFile:fullPath2 atomically:NO];
 
-        NSString* lastLine = @"Beauty is truth, truth beauty";
-        NSString* fileName = @"GrecianUrn.txt";
-        NSString* homeDir  = NSHomeDirectory();
-        NSString* fullPath = [homeDir stringByAppendingPathComponent:fileName];
+        NSString* lastLine3 = @"Beauty is truth, truth beauty";
+        NSString* fileName3 = @"GrecianUrn.txt";
+        NSString* homeDir3  = NSHomeDirectory();
+        NSString* fullPath3 = [homeDir3 stringByAppendingPathComponent:fileName3];
 
         NSError* error = nil;
 
-        [lastLine writeToFile:fullPath atomically:NO 
+        [lastLine3 writeToFile:fullPath3 atomically:NO
             encoding:NSASCIIStringEncoding error:&error];
 
         if (error != nil) {
@@ -221,21 +222,21 @@ int main(int argc, const char * argv[]) {
 
         // Reading from files
 
-        NSString* fileName = @"GrecianUrn.txt";
-        NSString* homeDir  = NSHomeDirectory();
-        NSString* fullPath = [homeDir stringByAppendingPathComponent:fileName];
-        NSError* error     = nil;
+        NSString* fileName4 = @"GrecianUrn.txt";
+        NSString* homeDir4  = NSHomeDirectory();
+        NSString* fullPath4 = [homeDir4 stringByAppendingPathComponent:fileName4];
+        NSError* error4     = nil;
 
         NSStringEncoding encoding;
 
         // Aligning multipart methods at the colon character is a common 
         // convention within the Objective C community.
-        NSString* contents = [NSString stringWithContentsOfFile: fullPath 
+        NSString* contents = [NSString stringWithContentsOfFile: fullPath4
                                                    usedEncoding: &encoding
-                                                          error: &error];
+                                                          error: &error4];
 
         if ( error != nil ) {
-            [NSApp presentError:error];
+           // [NSApp presentError:error4];
         }
 
         NSLog(@"Contents of '%@': %@", fileName, contents);
@@ -276,18 +277,20 @@ int main(int argc, const char * argv[]) {
 
 //declares that Constant4 is constant pointer to a constant integer. Basically ‘const’ applies to whatever is on its immediate left (other than if there is nothing there in which case it applies to whatever is its immediate right).
 
-        NSMutableString* const name = [NSMutableString stringWithString:@"Lea"];
+        NSMutableString* const name5 = [NSMutableString stringWithString:@"Lea"];
         // OK: 'const' doesn't effect object mutability.
-        [name setString:@"Sally"];
+        [name5 setString:@"Sally"];
         // ERROR: can't change the object. (name is a constant pointer)
         // see: http://www.thegeekstuff.com/2012/06/c-constant-pointers/
         // http://www.codeguru.com/cpp/cpp/cpp_mfc/general/article.php/c6967/Constant-Pointers-and-Pointers-to-Constants.htm
         // http://duramecho.com/ComputerInformation/WhyHowCppConst.html
-        name = @"Sally";
+
+        //This is an error.
+        //name5 = @"Sally";
 
         // This is a regular NSString not a mutable string, the LHS type
         // does not determine what it is.
-        NSMutableString* name = @"Jane";
+        NSMutableString* name6 = @"Jane";
     }
 
     return 0;

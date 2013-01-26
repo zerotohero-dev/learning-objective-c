@@ -61,6 +61,10 @@
 - (void) dealloc {
     [caption release];
     [photographer release];
+    [name release];
+    [_name dealloc];
+    [_photographer dealloc];
+    [_caption dealloc];
     [super dealloc];
 }
 
