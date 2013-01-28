@@ -291,6 +291,32 @@ int main(int argc, const char * argv[]) {
         // This is a regular NSString not a mutable string, the LHS type
         // does not determine what it is.
         NSMutableString* name6 = @"Jane";
+
+        // XCode/iOS Debugging Tips:
+        // CMD + \ : to put a breakpoint (use conditional breakpoints too)
+        // typing `po` in the console will give detail about the current object.
+//        (lldb) po name
+//                (NSMutableString *) $3 = 0x00000001049003d0 Daisy
+//        (lldb) p name
+//                (NSMutableString *) $4 = 0x00000001049003d0
+
+// po [self view] recursiveDescription] -> will print out the view hierarchy.
+
+// Logging lifecycle events is a great idea
+
+//                - (id)init
+//        {
+//            self = [super init];
+//            if (self)
+//            {
+//                NSLog(@"%@: %@", NSStringFromSelector(_cmd), self);
+//            }
+//            return self;
+//        }
+//        - (void)dealloc
+//        {
+//            NSLog(@"%@: %@", NSStringFromSelector(_cmd), self);
+//        }
     }
 
     return 0;
