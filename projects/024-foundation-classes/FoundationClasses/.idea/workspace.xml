@@ -182,7 +182,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Objective-C" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../018-properties/Properties/Properties/O2Photo.m" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../0025-basic-controls/BasicControls/BasicControls.xcodeproj" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="FoundationClasses" />
     <property name="options.splitter.details.proportions" value="0.2" />
