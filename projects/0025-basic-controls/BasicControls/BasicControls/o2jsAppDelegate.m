@@ -39,6 +39,23 @@
     // An action is basically a selector (or a placeholder for a method)
 
     // NSButton
+
+    // Action
+    // The message that the controls sends to an object when the user interacts
+    // with it (like when a button is clicked) technically an action is an instance
+    // variable that stores an Objective C selector.
+
+    // Target
+    // The object that the action is sent to.
+    // The target might not be the final destination of the message,
+    // it's just a starting point.
+
+    // Action Method
+    // A method in the target class that receives the action message
+    // it must have a return type IBAction (or void) and accept a single id
+    // object as input.
+
+    // MainMenu.xib is nothing but an XML file, open in an editor and observe what it has.
 }
 
 @end

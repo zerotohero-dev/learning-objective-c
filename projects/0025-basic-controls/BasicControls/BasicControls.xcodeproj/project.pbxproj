@@ -13,6 +13,7 @@
 		085705E116B6D6A00069731F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 085705DF16B6D6A00069731F /* Credits.rtf */; };
 		085705E416B6D6A00069731F /* o2jsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 085705E316B6D6A00069731F /* o2jsAppDelegate.m */; };
 		085705E716B6D6A00069731F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085705E516B6D6A00069731F /* MainMenu.xib */; };
+		085705EE16B797320069731F /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085705ED16B797320069731F /* Application.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,9 @@
 		085705DE16B6D6A00069731F /* BasicControls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicControls-Prefix.pch"; sourceTree = "<group>"; };
 		085705E016B6D6A00069731F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		085705E216B6D6A00069731F /* o2jsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = o2jsAppDelegate.h; sourceTree = "<group>"; };
-		085705E316B6D6A00069731F /* o2jsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = o2jsAppDelegate.m; sourceTree = "<group>"; };
+		085705E316B6D6A00069731F /* o2jsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = o2jsAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		085705E616B6D6A00069731F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		085705ED16B797320069731F /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Application.xib; path = ../Application.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		085705D616B6D6A00069731F /* BasicControls */ = {
 			isa = PBXGroup;
 			children = (
+				085705ED16B797320069731F /* Application.xib */,
 				085705E216B6D6A00069731F /* o2jsAppDelegate.h */,
 				085705E316B6D6A00069731F /* o2jsAppDelegate.m */,
 				085705E516B6D6A00069731F /* MainMenu.xib */,
@@ -157,6 +160,7 @@
 				085705DB16B6D6A00069731F /* InfoPlist.strings in Resources */,
 				085705E116B6D6A00069731F /* Credits.rtf in Resources */,
 				085705E716B6D6A00069731F /* MainMenu.xib in Resources */,
+				085705EE16B797320069731F /* Application.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

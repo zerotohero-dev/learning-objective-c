@@ -8,5 +8,6 @@
 
 int main(int argc, char *argv[])
 {
+    // TODO: check
     return NSApplicationMain(argc, (const char **)argv);
 }
