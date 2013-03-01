@@ -16,6 +16,16 @@
 		085705EE16B797320069731F /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085705ED16B797320069731F /* Application.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B6EA6BE61A3276B02B7E8DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6EA6F3D2B541A36A0E39E08 /* DataSources.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6EA67D967E6ABD95DD2B793;
+			remoteInfo = DataSources;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		085705CC16B6D6A00069731F /* BasicControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		085705D016B6D6A00069731F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -31,6 +41,7 @@
 		085705E316B6D6A00069731F /* o2jsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = o2jsAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		085705E616B6D6A00069731F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		085705ED16B797320069731F /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Application.xib; path = ../Application.xib; sourceTree = "<group>"; };
+		B6EA6F3D2B541A36A0E39E08 /* DataSources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataSources.xcodeproj; path = "../../027-data-sources/DataSources/DataSources.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 				085705D616B6D6A00069731F /* BasicControls */,
 				085705CF16B6D6A00069731F /* Frameworks */,
 				085705CD16B6D6A00069731F /* Products */,
+				B6EA6F3D2B541A36A0E39E08 /* DataSources.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B6EA637F475EC37D97E65B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA675BAC94A0AC0F47FACF /* DataSources.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,12 +165,28 @@
 			mainGroup = 085705C116B6D6A00069731F;
 			productRefGroup = 085705CD16B6D6A00069731F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6EA637F475EC37D97E65B83 /* Products */;
+					ProjectRef = B6EA6F3D2B541A36A0E39E08 /* DataSources.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				085705CB16B6D6A00069731F /* BasicControls */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6EA675BAC94A0AC0F47FACF /* DataSources.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DataSources.app;
+			remoteRef = B6EA6BE61A3276B02B7E8DC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		085705CA16B6D6A00069731F /* Resources */ = {
@@ -300,6 +336,7 @@
 				085705EC16B6D6A00069731F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

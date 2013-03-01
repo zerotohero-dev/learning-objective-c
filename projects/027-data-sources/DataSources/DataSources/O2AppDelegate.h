@@ -9,6 +9,7 @@
 @interface O2AppDelegate : NSObject <NSApplicationDelegate>
 
     @property (assign) IBOutlet NSWindow*    window;
+//check assign,retain
     @property (retain) IBOutlet NSTableView* guestTableView;
     @property (retain) NSMutableArray*       guests;
 
