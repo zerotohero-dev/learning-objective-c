@@ -8,10 +8,14 @@
 
 @interface O2AppDelegate : NSObject <NSApplicationDelegate>
 
+// OUTLETS
     @property (assign) IBOutlet NSWindow*    window;
 //check assign,retain
     @property (retain) IBOutlet NSTableView* guestTableView;
+
+// DATA
     @property (retain) NSMutableArray*       guests;
 
+// ACTION METHODS
     - (IBAction)signIn:(id)sender;
 @end

@@ -13,6 +13,7 @@
 		08B8D6B316C5619C0003C7AE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08B8D6B116C5619C0003C7AE /* Credits.rtf */; };
 		08B8D6B616C5619C0003C7AE /* O2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B8D6B516C5619C0003C7AE /* O2AppDelegate.m */; };
 		08B8D6B916C5619D0003C7AE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B8D6B716C5619D0003C7AE /* MainMenu.xib */; };
+		B6EA69C3BEE0347142D65D97 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA6956C875AA6A077CD09D /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		08B8D6B416C5619C0003C7AE /* O2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2AppDelegate.h; sourceTree = "<group>"; };
 		08B8D6B516C5619C0003C7AE /* O2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2AppDelegate.m; sourceTree = "<group>"; };
 		08B8D6B816C5619D0003C7AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B6EA659CF7CD375FBD031E6E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6EA6956C875AA6A077CD09D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				08B8D6B516C5619C0003C7AE /* O2AppDelegate.m */,
 				08B8D6B716C5619D0003C7AE /* MainMenu.xib */,
 				08B8D6A916C5619C0003C7AE /* Supporting Files */,
+				B6EA6956C875AA6A077CD09D /* Person.m */,
+				B6EA659CF7CD375FBD031E6E /* Person.h */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			files = (
 				08B8D6AF16C5619C0003C7AE /* main.m in Sources */,
 				08B8D6B616C5619C0003C7AE /* O2AppDelegate.m in Sources */,
+				B6EA69C3BEE0347142D65D97 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,6 +5,7 @@
  */
 
 #import "O2AppDelegate.h"
+#import "Person.h"
 
 @interface O2AppDelegate (Private)
     + (id) guestWithName:(NSString*)name;
@@ -24,6 +25,34 @@
 
     - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
         [self setupDefaultGuests];
+
+        Person* myPerson = [[Person alloc] init];
+
+        myPerson.firstName = @"Joe";
+
+        [myPerson setValue:@"Bob" forKey:@"firstName"];
+        [myPerson setValue:@"Smith" forKey:@"lastName"];
+
+        // get value using KVC.
+        NSLog(@"myPerson firstName: %@", [myPerson valueForKey:@"firstName"]);
+
+        // get value using normal accessor.
+        NSLog(@"myPerson lastName: %@", myPerson.lastName);
+
+        [myPerson release];
+
+        Person* myPerson1 = [[[Person alloc] init] autorelease]; [myPerson1 setValue:@"Paul" forKey:@"firstName"];
+        Person* myPerson2 = [[[Person alloc] init] autorelease]; [myPerson2 setValue:@"John" forKey:@"firstName"];
+        Person* myPerson3 = [[[Person alloc] init] autorelease]; [myPerson3 setValue:@"George" forKey:@"firstName"];
+        Person* myPerson4 = [[[Person alloc] init] autorelease]; [myPerson4 setValue:@"Ringo" forKey:@"firstName"];
+
+        NSMutableArray* array = [NSMutableArray array];
+        [array addObject:myPerson1];
+        [array addObject:myPerson2];
+        [array addObject:myPerson3];
+        [array addObject:myPerson4];
+
+        NSLog( @"Names %@", [array valueForKey:@"firstName"] );
     }
 
     // Private Methods
@@ -57,18 +86,43 @@
 
         [self.guests addObject:guest];
 
-        [ self.guestTableView reloadData];
+        [self.guestTableView reloadData];
 
 
         NSInteger columnIndex = [
                 self.guestTableView columnWithIdentifier:GBNameIdentifier];
 
         [self.guestTableView editColumn: columnIndex
-                                     row: [self.guests indexOfObject:guest]
-                               withEvent: nil
-                                  select: YES
+                                    row: [self.guests indexOfObject:guest]
+                              withEvent: nil
+                                 select: YES
         ];
     }
+
+    - (NSInteger) numberOfRowsInTableView:(NSTableView *)table {
+        return self.guests.count;
+    }
+
+    -  (id)             tableView: (NSTableView *)table
+        objectValueForTableColumn: (NSTableColumn *)column
+                              row: (NSUInteger)row {
+            NSDictionary* guest = [self.guests objectAtIndex:row];
+            NSString* identifier = column.identifier;
+
+            return [guest objectForKey:identifier];
+    }
+
+    - (void)     tableView: (NSTableView*)table
+            setObjectValue: (id)object
+            forTableColumn: (NSTableColumn*)column
+                       row: (NSInteger)row {
+            NSMutableDictionary* guest = [self.guests objectAtIndex:row];
+            NSString* identifier = column.identifier;
+            [guest setObject:object forKey:identifier];
+     }
+
+    // cocoa bindings is supported by three protocols: KVC KVO KVB (key value coding
+    // key value observing, key value binding)
 
     // - (NSInteger) numberOfRowsInTableView: (NSTableView *)table;
     // - (id) tableView: (NSTableView *)table objectValueForTableColumn: (NSTableColumn *)column row: (NSInteger)row;
