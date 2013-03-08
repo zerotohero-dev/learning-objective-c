@@ -6,6 +6,11 @@
 
 #import "GBAppDelegate.h"
 
+// debug tips
+// always use accessors
+// user getters and setters to debug foo, getFoo
+// do not forget to set `model key path` in the bindings inspector
+
 NSString* const NAME_IDENTIFIER = @"name";
 NSString* const DATE_IDENTIFIER = @"date";
 
@@ -54,7 +59,7 @@ NSString* const DATE_IDENTIFIER = @"date";
 
     NSLog( @"before reload" );
 
-    [self.guestsTableView reloadData];
+//    [self.guestsTableView reloadData];
 
     NSLog( @"after reload" );
 }
@@ -78,9 +83,13 @@ NSString* const DATE_IDENTIFIER = @"date";
     NSLog(@"signin");
     id guest = [[self class] guestWithName:nil];
 
-    [self.guests addObject:guest];
+//    [self.guests addObject:guest];
 
-    [self.guestsTableView reloadData];
+    //this is binding aware, return an array proxy; any changes made to that proxy will
+    //be reflected to the bounded views too.
+     [[self mutableArrayValueForKey:@"guests"] addObject:guest];
+
+//    [self.guestsTableView reloadData];
 
     NSInteger columnIndex = [self.guestsTableView columnWithIdentifier:NAME_IDENTIFIER];
 
@@ -92,30 +101,30 @@ NSString* const DATE_IDENTIFIER = @"date";
 
 // DataSource Methods
 
-- (NSInteger) numberOfRowsInTableView:(NSTableView *)table {
-    NSLog(@"count waned");
-    return self.guests.count;
-}
-
-- (id) tableView: (NSTableView *)table
-            objectValueForTableColumn: (NSTableColumn *)column row: (NSInteger)row {
-    NSLog(@"Tableview wanted");
-
-    NSDictionary* guest = [self.guests objectAtIndex:row];
-    NSString* identifier = column.identifier;
-
-    return [guest objectForKey:identifier];
-}
-
-- (void) tableView: (NSTableView *)table setObjectValue: (id)object
-            forTableColumn: (NSTableColumn *)column row: (NSInteger)row {
-    NSLog(@"Trying to set");
-
-    NSMutableDictionary* guest = [self.guests objectAtIndex:row];
-    NSString* identifier = column.identifier;
-
-    [guest setObject:object forKey:identifier];
-}
+//- (NSInteger) numberOfRowsInTableView:(NSTableView *)table {
+//    NSLog(@"count waned");
+//    return self.guests.count;
+//}
+//
+//- (id) tableView: (NSTableView *)table
+//            objectValueForTableColumn: (NSTableColumn *)column row: (NSInteger)row {
+//    NSLog(@"Tableview wanted");
+//
+//    NSDictionary* guest = [self.guests objectAtIndex:row];
+//    NSString* identifier = column.identifier;
+//
+//    return [guest objectForKey:identifier];
+//}
+//
+//- (void) tableView: (NSTableView *)table setObjectValue: (id)object
+//            forTableColumn: (NSTableColumn *)column row: (NSInteger)row {
+//    NSLog(@"Trying to set");
+//
+//    NSMutableDictionary* guest = [self.guests objectAtIndex:row];
+//    NSString* identifier = column.identifier;
+//
+//    [guest setObject:object forKey:identifier];
+//}
 
 //TODO: protocols versus categories
 

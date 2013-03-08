@@ -1,10 +1,8 @@
-//
-//  main.m
-//  BasicBindings
-//
-//  Created by Volkan Ozcelik on 03/07/13.
-//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
-//
+/*
+ *  This program is distributed under
+ *  the terms of the MIT license.
+ *  Please see the LICENSE file for details.
+ */
 
 #import <Cocoa/Cocoa.h>
 

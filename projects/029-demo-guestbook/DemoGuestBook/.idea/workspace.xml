@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67fcf29d-829f-4de8-aa2d-15c536e93c71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/Person.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/Person.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/DemoGuestBook-Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/DemoGuestBook-Prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/en.lproj/Credits.rtf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/en.lproj/MainMenu.xib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DemoGuestBook/main.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../027-data-sources/DataSources/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../027-data-sources/DataSources/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.h" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.m" afterPath="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/O2AppDelegate.h" afterPath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/O2AppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/O2AppDelegate.m" afterPath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/O2AppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/main.m" afterPath="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings/main.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m" afterPath="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoGuestBook/en.lproj/MainMenu.xib" afterPath="$PROJECT_DIR$/DemoGuestBook/en.lproj/MainMenu.xib" />
     </list>
     <ignored path="DemoGuestBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,22 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DemoGuestBook/main.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.20089285">
+            <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GBAppDelegate.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GBAppDelegate.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="-3.4615386">
-              <folding>
-                <element signature="e#378#397#0" expanded="true" />
-              </folding>
+            <state line="11" column="66" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2907489">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,8 +78,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.h" />
-        <option value="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m" />
         <option value="$PROJECT_DIR$/DemoGuestBook/main.m" />
+        <option value="$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m" />
       </list>
     </option>
   </component>
@@ -133,56 +122,6 @@
               <option name="myItemId" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoGuestBook" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Supporting Files" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -191,11 +130,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.h" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../028-basic-bindings/BasicBindings/BasicBindings.xcodeproj" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.DemoGuestBook">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="DemoGuestBook" TARGET_NAME="DemoGuestBook" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="DemoGuestBook" RUN_TARGET_NAME="DemoGuestBook" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -233,6 +172,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="67fcf29d-829f-4de8-aa2d-15c536e93c71" name="Default" comment="" />
       <created>1362720688315</created>
       <updated>1362720688315</updated>
     </task>
@@ -240,25 +180,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="829" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982308" sideWeight="0.670904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982308" sideWeight="0.670904" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -314,9 +254,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.h">
+    <entry file="file://$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DemoGuestBook/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -328,18 +282,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m">
+    <entry file="file://$PROJECT_DIR$/DemoGuestBook/main.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="-3.4615386">
-          <folding>
-            <element signature="e#378#397#0" expanded="true" />
-          </folding>
+        <state line="12" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DemoGuestBook/main.m">
+    <entry file="file://$PROJECT_DIR$/../../027-data-sources/DataSources/DataSources/O2AppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.20089285">
+        <state line="0" column="0" selection-start="0" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DemoGuestBook/GBAppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="66" selection-start="305" selection-end="305" vertical-scroll-proportion="0.2907489">
           <folding />
         </state>
       </provider>

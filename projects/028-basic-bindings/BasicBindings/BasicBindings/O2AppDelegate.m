@@ -1,3 +1,15 @@
+/*
+ *  This program is distributed under
+ *  the terms of the MIT license.
+ *  Please see the LICENSE file for details.
+ */
+
+// NSObjectController: Used to bind a view to a single object.
+// NSArrayController: Used for binding views that display collections of objects.
+// NSTreeController: Used for views that need to bind trees of objects.
+// NSUserDefaultsController: Binds UI elements to application preferences.
+// NSDictionaryController: binds key-value pair series to UI elements.
+
 #import "O2AppDelegate.h"
 
 NSString* const kDefaultTitle = @"New Image";
