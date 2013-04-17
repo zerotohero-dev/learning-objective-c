@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6EA61A96AEE0F1836D5714F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA602851E1C701891879D6 /* main.m */; };
+		B6EA61FC2345846E04AB0269 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EA683D8939EF1FAF511B7A /* Cocoa.framework */; };
+		B6EA6218DD4CFC04ADADCE88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6EA6CAC4104EEDAE78F26A7 /* InfoPlist.strings */; };
+		B6EA66422DA695EA480B8849 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B6EA6BE5DA320434CFC0A887 /* Credits.rtf */; };
+		B6EA69B9F929EDC3B5DAA5A5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EA616495F1D0EF43E9F32F /* CoreData.framework */; };
+		B6EA6C81D4B7F370860CCC60 /* PGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA66E4D0F0929458AA68A0 /* PGAppDelegate.m */; };
+		B6EA6CEC87CE1610164C6011 /* CustomWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA62A7D8EEE123923BD585 /* CustomWindowController.m */; };
+		B6EA6F3ECBB4C30326B20AD3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EA6CAAB93F0033E44E89A5 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6EA602851E1C701891879D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6EA616495F1D0EF43E9F32F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6EA6164AC41520ED8CE9C8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B6EA61F2AA3111534B81095D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6EA62A7D8EEE123923BD585 /* CustomWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindowController.m; sourceTree = "<group>"; };
+		B6EA65E06893C2D384D95FBD /* CustomWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindowController.h; sourceTree = "<group>"; };
+		B6EA66E4D0F0929458AA68A0 /* PGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGAppDelegate.m; sourceTree = "<group>"; };
+		B6EA67AB65B77803C3EE226D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6EA67F42548536B37BD5586 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B6EA683D8939EF1FAF511B7A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B6EA6854683BF2CBA7BE888E /* O2Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = O2Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EA6D52A72D837F4CB7C27F /* PGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGAppDelegate.h; sourceTree = "<group>"; };
+		B6EA6DAB689B87B15B70FA05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B6EA6DF693CA2E4E0666063C /* O2Gallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "O2Gallery-Prefix.pch"; sourceTree = "<group>"; };
+		B6EA6E5095C6BFCFB84BE7C8 /* O2Gallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "O2Gallery-Info.plist"; sourceTree = "<group>"; };
+		B6EA6FAA1DC1B32FD8D3C236 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6EA6D5DC1D9DDDF8F765033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EA61FC2345846E04AB0269 /* Cocoa.framework in Frameworks */,
+				B6EA69B9F929EDC3B5DAA5A5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6EA60E8799D24A54934C0D2 /* O2Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA6B0D7659AF3F06472921 /* Supporting Files */,
+				B6EA6D52A72D837F4CB7C27F /* PGAppDelegate.h */,
+				B6EA66E4D0F0929458AA68A0 /* PGAppDelegate.m */,
+				B6EA6CAAB93F0033E44E89A5 /* MainMenu.xib */,
+				B6EA62A7D8EEE123923BD585 /* CustomWindowController.m */,
+				B6EA65E06893C2D384D95FBD /* CustomWindowController.h */,
+			);
+			path = O2Gallery;
+			sourceTree = "<group>";
+		};
+		B6EA60EAA95256AD82B33018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA683D8939EF1FAF511B7A /* Cocoa.framework */,
+				B6EA6626EB173BE2FBED3840 /* Other Frameworks */,
+				B6EA616495F1D0EF43E9F32F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6EA61F0CAA75F90D59D4B21 = {
+			isa = PBXGroup;
+			children = (
+				B6EA6DCC7BD37A27B4750D45 /* Products */,
+				B6EA60EAA95256AD82B33018 /* Frameworks */,
+				B6EA60E8799D24A54934C0D2 /* O2Gallery */,
+			);
+			sourceTree = "<group>";
+		};
+		B6EA6626EB173BE2FBED3840 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA6DAB689B87B15B70FA05 /* AppKit.framework */,
+				B6EA61F2AA3111534B81095D /* CoreData.framework */,
+				B6EA6FAA1DC1B32FD8D3C236 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B6EA6B0D7659AF3F06472921 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA6E5095C6BFCFB84BE7C8 /* O2Gallery-Info.plist */,
+				B6EA6CAC4104EEDAE78F26A7 /* InfoPlist.strings */,
+				B6EA602851E1C701891879D6 /* main.m */,
+				B6EA6DF693CA2E4E0666063C /* O2Gallery-Prefix.pch */,
+				B6EA6BE5DA320434CFC0A887 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6EA6DCC7BD37A27B4750D45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA6854683BF2CBA7BE888E /* O2Gallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6EA65D0D2BBB5F1CD7CFC34 /* O2Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6EA6D1FBD385C473501F2EE /* Build configuration list for PBXNativeTarget "O2Gallery" */;
+			buildPhases = (
+				B6EA6F2B129D277273115696 /* Sources */,
+				B6EA6D5DC1D9DDDF8F765033 /* Frameworks */,
+				B6EA617DC6B1B8848EA03236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = O2Gallery;
+			productName = O2Gallery;
+			productReference = B6EA6854683BF2CBA7BE888E /* O2Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6EA679F0D195D08B94F9308 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B6EA6C3FC77AAA8151352886 /* Build configuration list for PBXProject "O2Gallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6EA61F0CAA75F90D59D4B21;
+			productRefGroup = B6EA6DCC7BD37A27B4750D45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6EA65D0D2BBB5F1CD7CFC34 /* O2Gallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6EA617DC6B1B8848EA03236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EA6218DD4CFC04ADADCE88 /* InfoPlist.strings in Resources */,
+				B6EA66422DA695EA480B8849 /* Credits.rtf in Resources */,
+				B6EA6F3ECBB4C30326B20AD3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6EA6F2B129D277273115696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EA61A96AEE0F1836D5714F /* main.m in Sources */,
+				B6EA6C81D4B7F370860CCC60 /* PGAppDelegate.m in Sources */,
+				B6EA6CEC87CE1610164C6011 /* CustomWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6EA6BE5DA320434CFC0A887 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6EA6164AC41520ED8CE9C8A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B6EA6CAAB93F0033E44E89A5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6EA67F42548536B37BD5586 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B6EA6CAC4104EEDAE78F26A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6EA67AB65B77803C3EE226D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6EA61044743A13B5782EAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6EA61F87751FB679F9FFF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "O2Gallery/O2Gallery-Prefix.pch";
+				INFOPLIST_FILE = "O2Gallery/O2Gallery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6EA625C83DBE3D0F92688BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "O2Gallery/O2Gallery-Prefix.pch";
+				INFOPLIST_FILE = "O2Gallery/O2Gallery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6EA6F1A29891AFC653474A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6EA6C3FC77AAA8151352886 /* Build configuration list for PBXProject "O2Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EA61044743A13B5782EAA7 /* Release */,
+				B6EA6F1A29891AFC653474A0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6EA6D1FBD385C473501F2EE /* Build configuration list for PBXNativeTarget "O2Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EA61F87751FB679F9FFF21 /* Release */,
+				B6EA625C83DBE3D0F92688BE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6EA679F0D195D08B94F9308 /* Project object */;
+}

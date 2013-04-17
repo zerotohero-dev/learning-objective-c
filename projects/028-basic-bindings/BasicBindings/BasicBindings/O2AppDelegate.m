@@ -10,6 +10,10 @@
 // NSUserDefaultsController: Binds UI elements to application preferences.
 // NSDictionaryController: binds key-value pair series to UI elements.
 
+// http://stackoverflow.com/questions/8796977/x-code-interface-builder-not-showing-app-delegate-object
+// http://www.cocoawithlove.com/2010/01/what-is-meta-class-in-objective-c.html
+// http://stackoverflow.com/questions/3559763/why-use-classname-alloc-instead-of-self-class-alloc
+
 #import "O2AppDelegate.h"
 
 NSString* const kDefaultTitle = @"New Image";

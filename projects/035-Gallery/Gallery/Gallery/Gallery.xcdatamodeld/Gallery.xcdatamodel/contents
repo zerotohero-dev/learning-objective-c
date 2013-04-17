@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C3006" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Album" syncable="YES">
+        <attribute name="title" attributeType="String" defaultValueString="New Album" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Photo" inverseName="album" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Photo" syncable="YES">
+        <attribute name="filePath" attributeType="String" syncable="YES"/>
+        <attribute name="orderIndex" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uniqueID" attributeType="String" syncable="YES"/>
+        <relationship name="album" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Album" inverseName="photos" inverseEntity="Album" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Album" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
