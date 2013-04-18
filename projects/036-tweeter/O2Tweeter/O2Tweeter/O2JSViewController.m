@@ -14,6 +14,12 @@
 @implementation O2JSViewController
 
 
+// All Objective C objects are actually C pointers to id type.
+// a message sent to a nil object quitely does nothing. (nil is a maybe monad for objective C)
+
+// ARC is back compat for projects up to iOs4.3
+// methods with alloc, copy or new in their name are assumed to return objects
+// that must be "memory-managed" -- other methods don't.
 - (IBAction)handleTweetButtonTapped:(id)sender
 {
     NSLog(@"handleTweetButtonTapped:");
@@ -27,9 +33,22 @@
 
     SLComposeViewController *tweetVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
 
-    [tweetVC setInitialText:@"Tweeting from iOS"];
+//    [tweetVC setInitialText:@"Tweeting from iOS"];
+
+    [tweetVC setInitialText: NSLocalizedString(@"Tweeting from iOS", nil)];
 
     [self presentViewController:tweetVC animated:YES completion:NULL];
+}
+
+- (IBAction)handleShowMyTweetsTapped:(id)sender
+{
+    //self?
+    [self.twitterWebView loadRequest:[
+        NSURLRequest requestWithURL:[
+                NSURL URLWithString:@"http://twitter.com/linkibol"
+            ]
+        ]
+    ];
 }
 
 - (void)viewDidLoad

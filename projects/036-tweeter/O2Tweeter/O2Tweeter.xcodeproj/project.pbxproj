@@ -19,6 +19,7 @@
 		0811A5A6171EFBFC000D3994 /* O2JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811A5A5171EFBFC000D3994 /* O2JSViewController.m */; };
 		0811A5A9171EFBFC000D3994 /* O2JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0811A5A7171EFBFC000D3994 /* O2JSViewController.xib */; };
 		0811A5B0171F0950000D3994 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0811A5AF171F0950000D3994 /* Social.framework */; };
+		0811A5B7171F799E000D3994 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0811A5B9171F799E000D3994 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,10 @@
 		0811A5A5171EFBFC000D3994 /* O2JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2JSViewController.m; sourceTree = "<group>"; };
 		0811A5A8171EFBFC000D3994 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/O2JSViewController.xib; sourceTree = "<group>"; };
 		0811A5AF171F0950000D3994 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0811A5B3171F77BC000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = tr; path = tr.lproj/O2JSViewController.xib; sourceTree = "<group>"; };
+		0811A5B4171F77BC000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0811A5B8171F799E000D3994 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0811A5BA171F79C6000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 				0811A59E171EFBFC000D3994 /* Default.png */,
 				0811A5A0171EFBFC000D3994 /* Default@2x.png */,
 				0811A5A2171EFBFC000D3994 /* Default-568h@2x.png */,
+				0811A5B9171F799E000D3994 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
 			);
 			mainGroup = 0811A580171EFBFC000D3994;
 			productRefGroup = 0811A58A171EFBFC000D3994 /* Products */;
@@ -168,6 +175,7 @@
 				0811A5A1171EFBFC000D3994 /* Default@2x.png in Resources */,
 				0811A5A3171EFBFC000D3994 /* Default-568h@2x.png in Resources */,
 				0811A5A9171EFBFC000D3994 /* O2JSViewController.xib in Resources */,
+				0811A5B7171F799E000D3994 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +199,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0811A596171EFBFC000D3994 /* en */,
+				0811A5B4171F77BC000D3994 /* tr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -199,8 +208,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				0811A5A8171EFBFC000D3994 /* en */,
+				0811A5B3171F77BC000D3994 /* tr */,
 			);
 			name = O2JSViewController.xib;
+			sourceTree = "<group>";
+		};
+		0811A5B9171F799E000D3994 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0811A5B8171F799E000D3994 /* en */,
+				0811A5BA171F79C6000D3994 /* tr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
