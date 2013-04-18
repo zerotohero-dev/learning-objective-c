@@ -74,7 +74,4 @@ NSNull -> since you cannot add nil to collections.
 
  */
 
-
-@property (nonatomic, strong) IBOutlet UIWebView *twitterWebView;
-
 @end

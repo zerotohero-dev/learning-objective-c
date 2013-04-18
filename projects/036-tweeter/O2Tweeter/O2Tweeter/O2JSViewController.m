@@ -8,8 +8,20 @@
 #import <Social/Social.h>
 
 @interface O2JSViewController ()
-
+- (void) reloadTweets;
+@property (nonatomic, strong) IBOutlet UIWebView *twitterWebView;
 @end
+
+
+// class extensions versus categories
+
+// goes to NSArray+MySafeMethods.h (by convention) where implementaiton goes
+// to the corresponding .m
+@interface NSArray (SafeMethods)
+- (id) firstObject;
+@end
+
+
 
 @implementation O2JSViewController
 
@@ -35,14 +47,44 @@
 
 //    [tweetVC setInitialText:@"Tweeting from iOS"];
 
+
+    tweetVC.completionHandler = ^(SLComposeViewControllerResult result) {
+        if (result != SLComposeViewControllerResultDone) {
+            return;
+        }
+
+        // Self is a variable in scope at the time of the block's creation.
+        // Don't thinks of self like `this` in JavaScript.
+        [self dismissViewControllerAnimated:YES completion:NULL];
+
+        [self reloadTweets];
+    };
+
     [tweetVC setInitialText: NSLocalizedString(@"Tweeting from iOS", nil)];
 
-    [self presentViewController:tweetVC animated:YES completion:NULL];
+    [self presentViewController:tweetVC animated:YES completion:^{
+        NSLog(@"tweet view is shown");
+    }];
+
+    //NSArray:enumerateObjectsUsingBlock: you can sort stuff using blocks too.
+    //NSDictionary has similar method too.
+
+    // Grand Central Dispatch
 }
+
+
+// typedef void (^SLComposeVIewControllerCompletionHandler)
+// (SLComposeViewControllerResult result);
+
+// a block contains both executable code and program state (like a closure)
 
 - (IBAction)handleShowMyTweetsTapped:(id)sender
 {
-    //self?
+    [self reloadTweets];
+}
+
+- (void) reloadTweets
+{
     [self.twitterWebView loadRequest:[
         NSURLRequest requestWithURL:[
                 NSURL URLWithString:@"http://twitter.com/linkibol"
