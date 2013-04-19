@@ -20,6 +20,7 @@
 		0811A5A9171EFBFC000D3994 /* O2JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0811A5A7171EFBFC000D3994 /* O2JSViewController.xib */; };
 		0811A5B0171F0950000D3994 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0811A5AF171F0950000D3994 /* Social.framework */; };
 		0811A5B7171F799E000D3994 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0811A5B9171F799E000D3994 /* Localizable.strings */; };
+		08DC54021721249600367683 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DC54011721249600367683 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +43,9 @@
 		0811A5AF171F0950000D3994 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0811A5B3171F77BC000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = tr; path = tr.lproj/O2JSViewController.xib; sourceTree = "<group>"; };
 		0811A5B4171F77BC000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0811A5B8171F799E000D3994 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0811A5BA171F79C6000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0811A5B8171F799E000D3994 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0811A5BA171F79C6000D3994 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		08DC54011721249600367683 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08DC54021721249600367683 /* Accounts.framework in Frameworks */,
 				0811A5B0171F0950000D3994 /* Social.framework in Frameworks */,
 				0811A58D171EFBFC000D3994 /* UIKit.framework in Frameworks */,
 				0811A58F171EFBFC000D3994 /* Foundation.framework in Frameworks */,
@@ -64,6 +67,7 @@
 		0811A580171EFBFC000D3994 = {
 			isa = PBXGroup;
 			children = (
+				08DC54011721249600367683 /* Accounts.framework */,
 				0811A5AF171F0950000D3994 /* Social.framework */,
 				0811A592171EFBFC000D3994 /* O2Tweeter */,
 				0811A58B171EFBFC000D3994 /* Frameworks */,
@@ -322,6 +326,7 @@
 				0811A5AE171EFBFC000D3994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

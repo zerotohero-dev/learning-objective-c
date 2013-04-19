@@ -6,10 +6,21 @@
 
 #import "O2JSViewController.h"
 #import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
 @interface O2JSViewController ()
 - (void) reloadTweets;
-@property (nonatomic, strong) IBOutlet UIWebView *twitterWebView;
+- (void) handleTwitterData: (NSData*) data
+               urlResponse: (NSHTTPURLResponse*) urlResponse
+                     error: (NSError*) error;
+
+//@property (nonatomic, strong) IBOutlet UIWebView *twitterWebView;
+
+@property (nonatomic, strong) IBOutlet UITextView *twitterTextView;
+
+@property (strong) ACAccountStore *accountStore;
+@property (readonly, strong) ACAccount *twitterAccount;
+
 @end
 
 
@@ -24,6 +35,32 @@
 
 
 @implementation O2JSViewController
+
+
+// instance var is _twitterAccount
+// setter is setTwitterAccount
+// getter is twitterAccount -- since the property is readonly there's no setter.
+@synthesize twitterAccount = _twitterAccount;
+
+// lazy loading.
+- (ACAccount*) twitterAccount {
+    if ( _twitterAccount ) {
+        return _twitterAccount;
+    }
+
+    self.accountStore = [[ACAccountStore alloc] init];
+
+    ACAccountType *twitterAccountType = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+
+
+    NSArray *twitterAccounts = [self.accountStore accountsWithAccountType:twitterAccountType];
+
+    if ([twitterAccounts count] > 0) {
+        _twitterAccount = [twitterAccounts objectAtIndex:0];
+    }
+
+    return _twitterAccount;
+}
 
 
 // All Objective C objects are actually C pointers to id type.
@@ -46,7 +83,7 @@
     SLComposeViewController *tweetVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
 
 //    [tweetVC setInitialText:@"Tweeting from iOS"];
-
+    	
 
     tweetVC.completionHandler = ^(SLComposeViewControllerResult result) {
         if (result != SLComposeViewControllerResultDone) {
@@ -85,12 +122,74 @@
 
 - (void) reloadTweets
 {
-    [self.twitterWebView loadRequest:[
-        NSURLRequest requestWithURL:[
-                NSURL URLWithString:@"http://twitter.com/linkibol"
-            ]
-        ]
+    NSURL *twitterApiUrl = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/home_timeline.json"];
+
+    NSDictionary *twitterParams = @{
+//        @"screen_name" : @"linkibol"
+    };
+
+    SLRequest *request = [SLRequest
+             requestForServiceType : SLServiceTypeTwitter
+                     requestMethod : SLRequestMethodGET
+                               URL : twitterApiUrl
+                        parameters : twitterParams
     ];
+
+// if you remove this, you'll get "bad authentication data" error.
+    request.account = self.twitterAccount;
+
+    [request performRequestWithHandler:^(
+                NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        [self handleTwitterData:responseData urlResponse:urlResponse error:error];
+    }];
+
+
+//    [self.twitterWebView loadRequest:[
+//        NSURLRequest requestWithURL:[
+//                NSURL URLWithString:@"http://twitter.com/linkibol"
+//            ]
+//        ]
+//    ];
+}
+
+// dispatch_get_main_queue
+// dispatch_get_async
+
+- (void) handleTwitterData:(NSData *)data
+               urlResponse:(NSHTTPURLResponse *)urlResponse
+                     error:(NSError *)error {
+
+    NSError *jsonError = nil;
+
+    NSJSONSerialization *jsonResponse = [NSJSONSerialization
+                JSONObjectWithData:data
+                           options:0
+                             error:&jsonError
+    ];
+
+    NSLog(@"jsonResponse: %@", jsonResponse);
+
+    if (jsonError || ![jsonResponse isKindOfClass:[NSArray class]]) {
+        NSLog(@"Error in handleTwitter data serialization");
+
+        return;
+    }
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSArray *tweets = (NSArray*) jsonResponse;
+
+        for (NSDictionary *tweetDict in tweets) {
+            NSString *tweetText = [NSString stringWithFormat:@"%@ (%@)",
+                [tweetDict valueForKey:@"text"],
+                [tweetDict valueForKey:@"created_at"]
+            ];
+
+            self.twitterTextView.text = [NSString stringWithFormat:@"%@%@\n\n",
+                self.twitterTextView.text,
+                tweetText
+            ];
+        }
+    });
 }
 
 - (void)viewDidLoad
