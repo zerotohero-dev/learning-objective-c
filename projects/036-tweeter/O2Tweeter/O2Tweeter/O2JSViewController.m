@@ -161,7 +161,7 @@
 
     NSError *jsonError = nil;
 
-    NSJSONSerialization *jsonResponse = [NSJSONSerialization
+    NSArray  *jsonResponse = [NSJSONSerialization
                 JSONObjectWithData:data
                            options:0
                              error:&jsonError
@@ -176,7 +176,13 @@
     }
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSArray *tweets = (NSArray*) jsonResponse;
+        NSArray *tweets = jsonResponse;
+
+        tweets = [tweets sortedArrayUsingComparator:^NSComparisonResult (id obj1, id obj2) {
+            NSString *tweet1 = [obj1 valueForKey:@"text"];
+            NSString *tweet2 = [obj2 valueForKey:@"text"];
+            return [tweet1 compare:tweet2];
+        }];
 
         for (NSDictionary *tweetDict in tweets) {
             NSString *tweetText = [NSString stringWithFormat:@"%@ (%@)",
