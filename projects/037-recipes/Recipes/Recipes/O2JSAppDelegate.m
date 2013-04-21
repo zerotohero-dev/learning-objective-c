@@ -14,8 +14,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *directions = @"Tencereye etleri alıp, etler bıraktığı suyu \
+çekene dek kavurun. Ardından tereyağını, küçük kesilmiş soğanları \
+ekleyin. 3 dakika daha kavurun. 1 çorba kaşığı sirkeyi ilave edin. \
+Rendelenmiş domatesleri, kekiği, sıcak suyu ve en son tuzu ekleyerek, \
+etler yumuşayana dek pişirin.\
+\n\n\n\
+Patlıcanları ateşte közleyin. Kabuklarını soyduktan sonra limonlu suda \
+5 dakika bekletin. Suyunu iyice süzün. Keskin bir bıçak yardımıyle çok \
+ince kıyın.\
+\n\n\n\
+Tereyağını bir tavada eritin. 1. 5 çorba kaşığı unu ekleyin. Sararana dek \
+kavurun. Sürekli karıştırarak soğuk sütü ilave edin. Karışım koyulaştığında \
+ateşten alın. İnce kıyılmış patlıcanları, tuzu, rendelenmiş kaşar peynirini \
+ekleyin. Hızla karıştırıp, servis tabağına alın. Üzerine eti koyarak, servis \
+yapın.";
+
     O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
-    recipe.title = @"Hünkâr Beğendi";
+
+    recipe.title      = @"Hünkâr Beğendi";
+    recipe.directions = directions;
+    recipe.image      = [UIImage imageNamed:@"begendi.jpg"];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 

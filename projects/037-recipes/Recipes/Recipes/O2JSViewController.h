@@ -11,8 +11,16 @@
 
 @interface O2JSViewController : UIViewController
 
-@property(nonatomic, strong) IBOutlet UILabel *recipeTitle;
+/*
+ * Views
+ */
+@property(nonatomic, strong) IBOutlet UILabel     *recipeTitle;
+@property(nonatomic, strong) IBOutlet UITextView  *directionsView;
+@property(nonatomic, strong) IBOutlet UIImageView *imageView;
 
+/*
+ * Models
+ */
 @property(nonatomic, strong) O2JSRecipe *recipe;
 
 @end

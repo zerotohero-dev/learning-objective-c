@@ -19,6 +19,7 @@
 		08DC542B1723820000367683 /* O2JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC542A1723820000367683 /* O2JSViewController.m */; };
 		08DC542E1723820000367683 /* O2JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DC542C1723820000367683 /* O2JSViewController.xib */; };
 		08DC54361723823800367683 /* O2JSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC54351723823800367683 /* O2JSRecipe.m */; };
+		08DC54381724A49100367683 /* begendi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08DC54371724A49100367683 /* begendi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		08DC542D1723820000367683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/O2JSViewController.xib; sourceTree = "<group>"; };
 		08DC54341723823800367683 /* O2JSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2JSRecipe.h; sourceTree = "<group>"; };
 		08DC54351723823800367683 /* O2JSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipe.m; sourceTree = "<group>"; };
+		08DC54371724A49100367683 /* begendi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = begendi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		08DC54051723820000367683 = {
 			isa = PBXGroup;
 			children = (
+				08DC54391724A49D00367683 /* Assets */,
 				08DC54171723820000367683 /* Recipes */,
 				08DC54101723820000367683 /* Frameworks */,
 				08DC540F1723820000367683 /* Products */,
@@ -109,6 +112,14 @@
 				08DC54271723820000367683 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08DC54391724A49D00367683 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				08DC54371724A49100367683 /* begendi.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		B6EA61D44338143EDFEA6463 /* Models */ = {
@@ -177,6 +188,7 @@
 				08DC54261723820000367683 /* Default@2x.png in Resources */,
 				08DC54281723820000367683 /* Default-568h@2x.png in Resources */,
 				08DC542E1723820000367683 /* O2JSViewController.xib in Resources */,
+				08DC54381724A49100367683 /* begendi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				08DC54331723820000367683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
