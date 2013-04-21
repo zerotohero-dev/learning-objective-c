@@ -175,7 +175,18 @@
         return;
     }
 
+    // Key Value Coding (Key Value Chain)
+    // Things we can get thru string keys (like keys in a dictionary)
+    // can be chained together in a path with a dot operator.
+    // NSString *userName = [dict valueForKeyPath:@"user.name"];
+    // Key value coding applies to public properties of objects
+    // public instance varables, and manually writtern getter methods.
+
+    NSString *myString = @"foo";
+
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"%@", myString);
+
         NSArray *tweets = jsonResponse;
 
         tweets = [tweets sortedArrayUsingComparator:^NSComparisonResult (id obj1, id obj2) {
@@ -184,11 +195,21 @@
             return [tweet1 compare:tweet2];
         }];
 
+        NSSortDescriptor *sortByText = [NSSortDescriptor sortDescriptorWithKey:@"text"
+                                                                     ascending:YES];
+
+        NSArray *sortDescriptors = @[sortByText];
+
+        tweets = [tweets sortedArrayUsingDescriptors:sortDescriptors];
+
         for (NSDictionary *tweetDict in tweets) {
-            NSString *tweetText = [NSString stringWithFormat:@"%@ (%@)",
-                [tweetDict valueForKey:@"text"],
-                [tweetDict valueForKey:@"created_at"]
+            NSString *tweetText = [NSString stringWithFormat:@"%@: %@ (%@)",
+                [tweetDict valueForKeyPath : @"user.name" ],
+                [tweetDict valueForKey     : @"text"      ],
+                [tweetDict valueForKey     : @"created_at"]
             ];
+
+
 
             self.twitterTextView.text = [NSString stringWithFormat:@"%@%@\n\n",
                 self.twitterTextView.text,
@@ -196,7 +217,14 @@
             ];
         }
     });
+
+    myString = @"bar";
 }
+
+// MVC in iOS in a nutshell
+// views are built in interface builder
+// models are built in code
+// UIViewController bridge the two.
 
 - (void)viewDidLoad
 {
