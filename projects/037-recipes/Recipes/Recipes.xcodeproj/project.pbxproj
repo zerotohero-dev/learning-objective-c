@@ -20,6 +20,9 @@
 		08DC542E1723820000367683 /* O2JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DC542C1723820000367683 /* O2JSViewController.xib */; };
 		08DC54361723823800367683 /* O2JSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC54351723823800367683 /* O2JSRecipe.m */; };
 		08DC54381724A49100367683 /* begendi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08DC54371724A49100367683 /* begendi.jpg */; };
+		08DC54401724C28600367683 /* O2JSRecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */; };
+		08DC54411724C28600367683 /* O2JSRecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */; };
+		08DC54431724CC5400367683 /* martini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08DC54421724CC5400367683 /* martini.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,10 @@
 		08DC54341723823800367683 /* O2JSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2JSRecipe.h; sourceTree = "<group>"; };
 		08DC54351723823800367683 /* O2JSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipe.m; sourceTree = "<group>"; };
 		08DC54371724A49100367683 /* begendi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = begendi.jpg; sourceTree = "<group>"; };
+		08DC543D1724C28600367683 /* O2JSRecipesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2JSRecipesListViewController.h; sourceTree = "<group>"; };
+		08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipesListViewController.m; sourceTree = "<group>"; };
+		08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2JSRecipesListViewController.xib; sourceTree = "<group>"; };
+		08DC54421724CC5400367683 /* martini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martini.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +96,8 @@
 		08DC54171723820000367683 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				08DC54201723820000367683 /* O2JSAppDelegate.h */,
-				08DC54211723820000367683 /* O2JSAppDelegate.m */,
-				08DC54291723820000367683 /* O2JSViewController.h */,
-				08DC542A1723820000367683 /* O2JSViewController.m */,
-				08DC542C1723820000367683 /* O2JSViewController.xib */,
+				08DC543C1724C16F00367683 /* AppDelegate */,
+				08DC543A1724C09B00367683 /* Controllers */,
 				08DC54181723820000367683 /* Supporting Files */,
 				B6EA61D44338143EDFEA6463 /* Models */,
 			);
@@ -117,9 +121,32 @@
 		08DC54391724A49D00367683 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				08DC54421724CC5400367683 /* martini.jpg */,
 				08DC54371724A49100367683 /* begendi.jpg */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		08DC543A1724C09B00367683 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08DC542C1723820000367683 /* O2JSViewController.xib */,
+				08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */,
+				08DC54291723820000367683 /* O2JSViewController.h */,
+				08DC542A1723820000367683 /* O2JSViewController.m */,
+				08DC543D1724C28600367683 /* O2JSRecipesListViewController.h */,
+				08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		08DC543C1724C16F00367683 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				08DC54201723820000367683 /* O2JSAppDelegate.h */,
+				08DC54211723820000367683 /* O2JSAppDelegate.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 		B6EA61D44338143EDFEA6463 /* Models */ = {
@@ -189,6 +216,8 @@
 				08DC54281723820000367683 /* Default-568h@2x.png in Resources */,
 				08DC542E1723820000367683 /* O2JSViewController.xib in Resources */,
 				08DC54381724A49100367683 /* begendi.jpg in Resources */,
+				08DC54411724C28600367683 /* O2JSRecipesListViewController.xib in Resources */,
+				08DC54431724CC5400367683 /* martini.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +232,7 @@
 				08DC54221723820000367683 /* O2JSAppDelegate.m in Sources */,
 				08DC542B1723820000367683 /* O2JSViewController.m in Sources */,
 				08DC54361723823800367683 /* O2JSRecipe.m in Sources */,
+				08DC54401724C28600367683 /* O2JSRecipesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

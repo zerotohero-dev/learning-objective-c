@@ -7,42 +7,69 @@
 //
 
 #import "O2JSAppDelegate.h"
-
 #import "O2JSViewController.h"
+#import "O2JSRecipe.h"
 
 @implementation O2JSAppDelegate
 
+- (NSArray*) recipes {
+    if (!_recipes) {
+        NSMutableArray *localRecipes = [NSMutableArray array];
+
+        for (int i = 0; i < 5000; i++) {
+            O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
+
+            recipe.directions = [NSString stringWithFormat:
+                    @"%@ medium dry vodka martini shaken, but not stirred", i
+            ];
+
+            recipe.title = [NSString stringWithFormat:@"Martini %@", i];
+            recipe.image = (i%2 == 0)?
+                [UIImage imageNamed:@"martini.jpg"]:
+                [UIImage imageNamed:@"begendi.jpg"];
+
+            [localRecipes addObject:recipe];
+        }
+
+        _recipes = localRecipes;
+    }
+
+    return _recipes;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSString *directions = @"Tencereye etleri alıp, etler bıraktığı suyu \
-çekene dek kavurun. Ardından tereyağını, küçük kesilmiş soğanları \
-ekleyin. 3 dakika daha kavurun. 1 çorba kaşığı sirkeyi ilave edin. \
-Rendelenmiş domatesleri, kekiği, sıcak suyu ve en son tuzu ekleyerek, \
-etler yumuşayana dek pişirin.\
-\n\n\n\
-Patlıcanları ateşte közleyin. Kabuklarını soyduktan sonra limonlu suda \
-5 dakika bekletin. Suyunu iyice süzün. Keskin bir bıçak yardımıyle çok \
-ince kıyın.\
-\n\n\n\
-Tereyağını bir tavada eritin. 1. 5 çorba kaşığı unu ekleyin. Sararana dek \
-kavurun. Sürekli karıştırarak soğuk sütü ilave edin. Karışım koyulaştığında \
-ateşten alın. İnce kıyılmış patlıcanları, tuzu, rendelenmiş kaşar peynirini \
-ekleyin. Hızla karıştırıp, servis tabağına alın. Üzerine eti koyarak, servis \
-yapın.";
-
-    O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
-
-    recipe.title      = @"Hünkâr Beğendi";
-    recipe.directions = directions;
-    recipe.image      = [UIImage imageNamed:@"begendi.jpg"];
+//    NSString *directions = @"Tencereye etleri alıp, etler bıraktığı suyu \
+//çekene dek kavurun. Ardından tereyağını, küçük kesilmiş soğanları \
+//ekleyin. 3 dakika daha kavurun. 1 çorba kaşığı sirkeyi ilave edin. \
+//Rendelenmiş domatesleri, kekiği, sıcak suyu ve en son tuzu ekleyerek, \
+//etler yumuşayana dek pişirin.\
+//\n\n\n\
+//Patlıcanları ateşte közleyin. Kabuklarını soyduktan sonra limonlu suda \
+//5 dakika bekletin. Suyunu iyice süzün. Keskin bir bıçak yardımıyle çok \
+//ince kıyın.\
+//\n\n\n\
+//Tereyağını bir tavada eritin. 1. 5 çorba kaşığı unu ekleyin. Sararana dek \
+//kavurun. Sürekli karıştırarak soğuk sütü ilave edin. Karışım koyulaştığında \
+//ateşten alın. İnce kıyılmış patlıcanları, tuzu, rendelenmiş kaşar peynirini \
+//ekleyin. Hızla karıştırıp, servis tabağına alın. Üzerine eti koyarak, servis \
+//yapın.";
+//
+//    O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
+//
+//    recipe.title      = @"Hünkâr Beğendi";
+//    recipe.directions = directions;
+//    recipe.image      = [UIImage imageNamed:@"begendi.jpg"];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.viewController = [[O2JSViewController alloc] initWithNibName:@"O2JSViewController" bundle:nil];
+    self.viewController = [[O2JSRecipesListViewController alloc] initWithNibName:@"O2JSRecipesListViewController" bundle:nil];
 
-    self.viewController.recipe = recipe;
+ //   self.viewController.recipe = recipe;
 
     self.window.rootViewController = self.viewController;
+
+    self.viewController.recipes = recipes;
 
     [self.window makeKeyAndVisible];
 
