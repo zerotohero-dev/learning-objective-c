@@ -12,6 +12,8 @@
 
 @implementation O2JSAppDelegate
 
+//TODO: read more about ARC
+
 - (NSArray*) recipes {
     if (!_recipes) {
         NSMutableArray *localRecipes = [NSMutableArray array];
@@ -20,10 +22,10 @@
             O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
 
             recipe.directions = [NSString stringWithFormat:
-                    @"%@ medium dry vodka martini shaken, but not stirred", i
+                    @"%i medium dry vodka martini shaken, but not stirred", i
             ];
 
-            recipe.title = [NSString stringWithFormat:@"Martini %@", i];
+            recipe.title = [NSString stringWithFormat:@"Martini %i", i];
             recipe.image = (i%2 == 0)?
                 [UIImage imageNamed:@"martini.jpg"]:
                 [UIImage imageNamed:@"begendi.jpg"];
@@ -39,6 +41,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+
+//Reference:
+//http://bou.io/IBOutletsIn2013.html#fn:2
+//https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/LoadingResources/CocoaNibs/CocoaNibs.html#//apple_ref/doc/uid/10000051i-CH4-SW6
+//http://developer.apple.com/library/ios/#documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html
+//
+//http://nsscreencast.com/episodes/27-new-objective-c-syntax
+//
+//Tutorials:
+//http://www.cocoawithlove.com/2008/10/debugging-tips-for-objective-c.html
+//http://www.raywenderlich.com/4295/multithreading-and-grand-central-dispatch-on-ios-for-beginners-tutorial
+//http://blog.austinlouden.com/post/47644085183/your-first-ios-app-100-programmatically?utm_source=statuscode&utm_medium=email
+
+
+
+
 //    NSString *directions = @"Tencereye etleri alıp, etler bıraktığı suyu \
 //çekene dek kavurun. Ardından tereyağını, küçük kesilmiş soğanları \
 //ekleyin. 3 dakika daha kavurun. 1 çorba kaşığı sirkeyi ilave edin. \
@@ -54,7 +73,7 @@
 //ateşten alın. İnce kıyılmış patlıcanları, tuzu, rendelenmiş kaşar peynirini \
 //ekleyin. Hızla karıştırıp, servis tabağına alın. Üzerine eti koyarak, servis \
 //yapın.";
-//
+
 //    O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
 //
 //    recipe.title      = @"Hünkâr Beğendi";
@@ -69,7 +88,7 @@
 
     self.window.rootViewController = self.viewController;
 
-    self.viewController.recipes = recipes;
+    self.viewController.recipes = self.recipes;
 
     [self.window makeKeyAndVisible];
 
