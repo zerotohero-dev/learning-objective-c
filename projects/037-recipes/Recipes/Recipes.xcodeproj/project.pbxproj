@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089AFE95172827F3004EA40E /* O2JSRecipesListDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2JSRecipesListDataSource.h; sourceTree = "<group>"; };
 		08DC540E1723820000367683 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC54111723820000367683 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08DC54131723820000367683 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089AFE94172827BC004EA40E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				089AFE95172827F3004EA40E /* O2JSRecipesListDataSource.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		08DC54051723820000367683 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +105,7 @@
 		08DC54171723820000367683 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				089AFE94172827BC004EA40E /* Protocols */,
 				08DC543C1724C16F00367683 /* AppDelegate */,
 				08DC543A1724C09B00367683 /* Controllers */,
 				08DC54181723820000367683 /* Supporting Files */,

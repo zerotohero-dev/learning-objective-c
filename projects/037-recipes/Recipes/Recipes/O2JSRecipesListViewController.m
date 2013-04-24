@@ -1,10 +1,8 @@
-//
-//  O2JSRecipesListViewController.m
-//  Recipes
-//
-//  Created by Volkan Ozcelik on 4/21/13.
-//  Copyright (c) 2013 Volkan Ozcelik. All rights reserved.
-//
+/*
+ *  This program is distributed under
+ *  the terms of the MIT license.
+ *  Please see the LICENSE file for details.
+ */
 
 #import "O2JSRecipesListViewController.h"
 
@@ -75,7 +73,7 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -87,7 +85,7 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
