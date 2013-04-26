@@ -24,6 +24,7 @@
 		08DC54401724C28600367683 /* O2JSRecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */; };
 		08DC54411724C28600367683 /* O2JSRecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */; };
 		08DC54431724CC5400367683 /* martini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08DC54421724CC5400367683 /* martini.jpg */; };
+		B6EA6DBE8B854A615687C5B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6EA621E0D6198464A226E87 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipesListViewController.m; sourceTree = "<group>"; };
 		08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = O2JSRecipesListViewController.xib; sourceTree = "<group>"; };
 		08DC54421724CC5400367683 /* martini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martini.jpg; sourceTree = "<group>"; };
+		B6EA621E0D6198464A226E87 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,26 @@
 				089AFE97172A37E6004EA40E /* O2JSRecipesSource.m */,
 			);
 			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		089AFE9A172A3DBA004EA40E /* RecipesListView */ = {
+			isa = PBXGroup;
+			children = (
+				08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */,
+				08DC543D1724C28600367683 /* O2JSRecipesListViewController.h */,
+				08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */,
+			);
+			name = RecipesListView;
+			sourceTree = "<group>";
+		};
+		089AFE9B172A3DD2004EA40E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08DC542C1723820000367683 /* O2JSViewController.xib */,
+				08DC54291723820000367683 /* O2JSViewController.h */,
+				08DC542A1723820000367683 /* O2JSViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		08DC54051723820000367683 = {
@@ -123,6 +145,7 @@
 				08DC543A1724C09B00367683 /* Controllers */,
 				08DC54181723820000367683 /* Supporting Files */,
 				B6EA61D44338143EDFEA6463 /* Models */,
+				B6EA621E0D6198464A226E87 /* Localizable.strings */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -153,12 +176,8 @@
 		08DC543A1724C09B00367683 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				08DC542C1723820000367683 /* O2JSViewController.xib */,
-				08DC543F1724C28600367683 /* O2JSRecipesListViewController.xib */,
-				08DC54291723820000367683 /* O2JSViewController.h */,
-				08DC542A1723820000367683 /* O2JSViewController.m */,
-				08DC543D1724C28600367683 /* O2JSRecipesListViewController.h */,
-				08DC543E1724C28600367683 /* O2JSRecipesListViewController.m */,
+				089AFE9B172A3DD2004EA40E /* View */,
+				089AFE9A172A3DBA004EA40E /* RecipesListView */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +260,7 @@
 				08DC54381724A49100367683 /* begendi.jpg in Resources */,
 				08DC54411724C28600367683 /* O2JSRecipesListViewController.xib in Resources */,
 				08DC54431724CC5400367683 /* martini.jpg in Resources */,
+				B6EA6DBE8B854A615687C5B3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

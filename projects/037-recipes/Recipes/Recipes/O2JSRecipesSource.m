@@ -29,6 +29,8 @@
                     [UIImage imageNamed:@"martini.jpg"]:
                     [UIImage imageNamed:@"begendi.jpg"];
 
+            recipe.preparationTime = [NSNumber numberWithInt:(i*10)];
+
             [localRecipes addObject:recipe];
         }
 

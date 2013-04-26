@@ -5,6 +5,7 @@
  */
 
 #import "O2JSRecipesListViewController.h"
+#import "O2JSViewController.h"
 
 @interface O2JSRecipesListViewController ()
 
@@ -53,14 +54,25 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
-    cell.textLabel.text = [[self.dataSource recipeAtIndex:((NSInteger)indexPath.row)] title];
-    
+
+    O2JSRecipe *recipe = [self.dataSource recipeAtIndex:(NSInteger)indexPath.row];
+
+    cell.textLabel.text       = recipe.title;
+    cell.imageView.image      = recipe.image;
+    cell.detailTextLabel.text = [NSString
+            stringWithFormat:@"%@ %@",
+                    recipe.preparationTime,
+                    NSLocalizedString(@"minutes", nil)
+    ];
+
     return cell;
 }
 
@@ -109,13 +121,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    O2JSViewController  *detailVC = [[O2JSViewController alloc] initWithNibName:@"O2JSViewController"
+                                                                      bundle:nil];
+    detailVC.recipe = [self.dataSource recipeAtIndex:indexPath.row];
+
+    [self presentViewController:detailVC animated:YES completion:nil];
 }
 
 @end
