@@ -5,7 +5,10 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "O2JSRecipe.h"
 
 @protocol O2JSRecipesListDataSource <NSObject>
-
+- (NSInteger)   recipeCount;
+- (O2JSRecipe*) recipeAtIndex:(NSInteger)index;
+- (void)        deleteRecipeAtIndex:(NSInteger)index;
 @end

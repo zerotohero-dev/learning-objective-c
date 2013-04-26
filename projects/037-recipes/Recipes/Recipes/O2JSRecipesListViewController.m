@@ -47,7 +47,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.recipes count];
+    return [self.dataSource recipeCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,7 +59,7 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text = [[self.recipes objectAtIndex:((NSUInteger)indexPath.row)] title];
+    cell.textLabel.text = [[self.dataSource recipeAtIndex:((NSInteger)indexPath.row)] title];
     
     return cell;
 }
@@ -79,9 +79,11 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+
+        [self.dataSource deleteRecipeAtIndex:indexPath.row];
+
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }

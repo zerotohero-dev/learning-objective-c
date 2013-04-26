@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089AFE98172A37E6004EA40E /* O2JSRecipesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AFE97172A37E6004EA40E /* O2JSRecipesSource.m */; };
 		08DC54121723820000367683 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DC54111723820000367683 /* UIKit.framework */; };
 		08DC54141723820000367683 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DC54131723820000367683 /* Foundation.framework */; };
 		08DC54161723820000367683 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DC54151723820000367683 /* CoreGraphics.framework */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		089AFE95172827F3004EA40E /* O2JSRecipesListDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2JSRecipesListDataSource.h; sourceTree = "<group>"; };
+		089AFE96172A37E6004EA40E /* O2JSRecipesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2JSRecipesSource.h; sourceTree = "<group>"; };
+		089AFE97172A37E6004EA40E /* O2JSRecipesSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipesSource.m; sourceTree = "<group>"; };
 		08DC540E1723820000367683 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DC54111723820000367683 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08DC54131723820000367683 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +77,15 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		089AFE99172A3A67004EA40E /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				089AFE96172A37E6004EA40E /* O2JSRecipesSource.h */,
+				089AFE97172A37E6004EA40E /* O2JSRecipesSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
 		08DC54051723820000367683 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		08DC54171723820000367683 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				089AFE99172A3A67004EA40E /* Data Sources */,
 				089AFE94172827BC004EA40E /* Protocols */,
 				08DC543C1724C16F00367683 /* AppDelegate */,
 				08DC543A1724C09B00367683 /* Controllers */,
@@ -243,6 +256,7 @@
 				08DC542B1723820000367683 /* O2JSViewController.m in Sources */,
 				08DC54361723823800367683 /* O2JSRecipe.m in Sources */,
 				08DC54401724C28600367683 /* O2JSRecipesListViewController.m in Sources */,
+				089AFE98172A37E6004EA40E /* O2JSRecipesSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

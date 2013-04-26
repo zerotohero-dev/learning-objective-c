@@ -6,8 +6,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "O2JSRecipesListDataSource.h"
+
 @interface O2JSRecipesListViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray* recipes;
+//@property (nonatomic, strong) NSArray* recipes;
+
+@property (nonatomic, strong) id <O2JSRecipesListDataSource> dataSource;
 
 @end
