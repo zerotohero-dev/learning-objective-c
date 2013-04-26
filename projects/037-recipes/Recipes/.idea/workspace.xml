@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da759320-54d7-4b86-aa43-18f25d208cae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recipes/Localizable.strings" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default-568h@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/begendi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/martini.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSAppDelegate.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSAppDelegate.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipe.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipe.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListDataSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesSource.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesSource.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/RecipeStoryBoards-Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/RecipeStoryBoards-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/en.lproj/InfoPlist.strings" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/en.lproj/MainStoryboard.storyboard" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/main.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Recipes.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/Models/O2JSRecipe.h" afterPath="$PROJECT_DIR$/Recipes/Models/O2JSRecipe.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/O2JSRecipesListViewController.m" afterPath="$PROJECT_DIR$/Recipes/O2JSRecipesListViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/O2JSRecipesSource.m" afterPath="$PROJECT_DIR$/Recipes/O2JSRecipesSource.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/O2JSViewController.h" afterPath="$PROJECT_DIR$/Recipes/O2JSViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/O2JSViewController.m" afterPath="$PROJECT_DIR$/Recipes/O2JSViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recipes/en.lproj/O2JSViewController.xib" afterPath="$PROJECT_DIR$/Recipes/en.lproj/O2JSViewController.xib" />
     </list>
     <ignored path="Recipes.iws" />
     <ignored path=".idea/workspace.xml" />
