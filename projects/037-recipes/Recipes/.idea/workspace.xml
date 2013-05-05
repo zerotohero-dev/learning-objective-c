@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da759320-54d7-4b86-aa43-18f25d208cae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default-568h@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/Default@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/begendi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/martini.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSAppDelegate.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSAppDelegate.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipe.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipe.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListDataSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesListViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSRecipesSource.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/O2JSViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/RecipeStoryBoards-Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/RecipeStoryBoards-Prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/en.lproj/MainStoryboard.storyboard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../038-storyboards/RecipeStoryBoards/RecipeStoryBoards/main.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="da759320-54d7-4b86-aa43-18f25d208cae" name="Default" comment="" />
     <ignored path="Recipes.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +23,7 @@
       <file leaf-file-name="O2JSViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Recipes/O2JSViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.40392157">
+            <state line="33" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.99215686">
               <folding />
             </state>
           </provider>
@@ -303,7 +279,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Recipes.xcodeproj" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Recipes" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -542,7 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Recipes/O2JSViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.40392157">
+        <state line="33" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.99215686">
           <folding />
         </state>
       </provider>
