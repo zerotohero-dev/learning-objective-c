@@ -12,9 +12,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    O2JSRecipesListViewController *controller = (O2JSRecipesListViewController *)self.window.rootViewController;
+//    O2JSRecipesListViewController *controller = (O2JSRecipesListViewController *)self.window.rootViewController;
+//    controller.dataSource = [[O2JSRecipesSource alloc] init];
+
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    O2JSRecipesListViewController *controller = (O2JSRecipesListViewController *)navigationController.topViewController;
 
     controller.dataSource = [[O2JSRecipesSource alloc] init];
+
 
     return YES;
 }

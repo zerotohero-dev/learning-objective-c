@@ -127,7 +127,7 @@
 #pragma mark - Segue Methods
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  if(YES || [@"presentRecipeDetail" isEqualToString:segue.identifier]) {
+  if([@"presentRecipeDetail" isEqualToString:segue.identifier]) {
     NSIndexPath *index = [self.tableView indexPathForCell:sender]; 
     O2JSRecipe *recipe = [self.dataSource recipeAtIndex:index.row];
     [[segue destinationViewController] setRecipe:recipe]; 

@@ -12,7 +12,7 @@
 /*
  * Views
  */
-@property(nonatomic, strong) IBOutlet UILabel     *recipeTitle;
+//@property(nonatomic, strong) IBOutlet UILabel     *recipeTitle;
 @property(nonatomic, strong) IBOutlet UITextView  *directionsView;
 @property(nonatomic, strong) IBOutlet UIImageView *imageView;
 @property(nonatomic, strong) IBOutlet UILabel     *preparationTime;
@@ -27,6 +27,6 @@
  */
 @property(nonatomic, strong) NSNumberFormatter *formatter;
 
-- (IBAction)dismiss:(id)sender;
+//- (IBAction)dismiss:(id)sender;
 
 @end

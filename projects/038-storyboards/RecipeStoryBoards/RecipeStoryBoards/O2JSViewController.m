@@ -29,7 +29,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    self.recipeTitle.text    = self.recipe.title;
+    self.title = self.recipe.title;
+
+//    self.recipeTitle.text    = self.recipe.title;
     self.directionsView.text = self.recipe.directions;
 
     if (self.recipe.image) {
@@ -39,9 +41,9 @@
     self.preparationTime.text = [self.formatter stringFromNumber:self.recipe.preparationTime];
 }
 
-- (IBAction)dismiss:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+//- (IBAction)dismiss:(id)sender {
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08420A5C1736CB93008125BD /* O2JSRecipeEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08420A5B1736CB93008125BD /* O2JSRecipeEditorViewController.m */; };
 		089AFEA9172AC322004EA40E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089AFEA8172AC322004EA40E /* UIKit.framework */; };
 		089AFEAB172AC322004EA40E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089AFEAA172AC322004EA40E /* Foundation.framework */; };
 		089AFEAD172AC322004EA40E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089AFEAC172AC322004EA40E /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08420A5A1736CB93008125BD /* O2JSRecipeEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2JSRecipeEditorViewController.h; sourceTree = "<group>"; };
+		08420A5B1736CB93008125BD /* O2JSRecipeEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2JSRecipeEditorViewController.m; sourceTree = "<group>"; };
 		089AFEA5172AC322004EA40E /* RecipeStoryBoards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeStoryBoards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089AFEA8172AC322004EA40E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		089AFEAA172AC322004EA40E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +115,8 @@
 				089AFECE172AC450004EA40E /* O2JSRecipesSource.m */,
 				089AFECF172AC450004EA40E /* O2JSRecipesSource.h */,
 				089AFEAF172AC322004EA40E /* Supporting Files */,
+				08420A5A1736CB93008125BD /* O2JSRecipeEditorViewController.h */,
+				08420A5B1736CB93008125BD /* O2JSRecipeEditorViewController.m */,
 			);
 			path = RecipeStoryBoards;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				089AFED0172AC450004EA40E /* O2JSRecipesSource.m in Sources */,
 				089AFED8172AC4CE004EA40E /* O2JSRecipe.m in Sources */,
 				089AFEDB172ACA11004EA40E /* O2JSViewController.m in Sources */,
+				08420A5C1736CB93008125BD /* O2JSRecipeEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +333,7 @@
 				089AFECA172AC322004EA40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
