@@ -46,4 +46,12 @@
 - (O2JSRecipe*)recipeAtIndex:(NSInteger)index       {return [self.recipes objectAtIndex:(NSUInteger)index];}
 - (void)       deleteRecipeAtIndex:(NSInteger)index {[self.recipes removeObjectAtIndex:(NSUInteger)index]; }
 
+- (O2JSRecipe*)createNewRecipe {
+    O2JSRecipe *recipe = [[O2JSRecipe alloc] init];
+
+    [self.recipes addObject:recipe];
+
+    return recipe;
+}
+
 @end

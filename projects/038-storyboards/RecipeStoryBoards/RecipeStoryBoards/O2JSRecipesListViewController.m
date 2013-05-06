@@ -6,6 +6,7 @@
 
 #import "O2JSRecipesListViewController.h"
 #import "O2JSViewController.h"
+#import "O2JSRecipeEditorViewController.h"
 
 @interface O2JSRecipesListViewController ()
 
@@ -127,11 +128,20 @@
 #pragma mark - Segue Methods
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  if([@"presentRecipeDetail" isEqualToString:segue.identifier]) {
-    NSIndexPath *index = [self.tableView indexPathForCell:sender]; 
-    O2JSRecipe *recipe = [self.dataSource recipeAtIndex:index.row];
-    [[segue destinationViewController] setRecipe:recipe]; 
-  }
-}
+    if([@"presentRecipeDetail" isEqualToString:segue.identifier]) {
+        NSIndexPath *index = [self.tableView indexPathForCell:sender];
+        O2JSRecipe *recipe = [self.dataSource recipeAtIndex:index.row];
+        [[segue destinationViewController] setRecipe:recipe];
+    }
 
+    if([@"addNewRecipe" isEqualToString:segue.identifier]) {
+        O2JSRecipe *recipe = [self.dataSource createNewRecipe];
+
+        UIViewController *topVC = [[segue destinationViewController] topViewController];
+
+        O2JSRecipeEditorViewController *editor = (O2JSRecipeEditorViewController*)topVC;
+
+        editor.recipe = recipe;
+    }
+}
 @end

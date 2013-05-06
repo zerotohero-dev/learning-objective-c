@@ -8,7 +8,7 @@
 
 #import "O2jsRecipe.h"
 
-@interface O2JSRecipeEditorViewController : UIViewController
+@interface O2JSRecipeEditorViewController : UIViewController <UITextFieldDelegate>
 
 @property(nonatomic, strong) O2JSRecipe *recipe;
 

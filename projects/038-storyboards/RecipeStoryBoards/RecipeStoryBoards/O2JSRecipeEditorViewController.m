@@ -56,4 +56,16 @@
   [self.formatter stringFromNumber:self.recipe.preparationTime];
 }
 
+#pragma mark - Text Field Delegate Methods
+
+- (BOOL)textFieldShouldReturn:(UITextField*)textField{
+    [textField resignFirstResponder];
+
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField*)textField{
+    self.recipe.title = textField.text;
+}
+
 @end

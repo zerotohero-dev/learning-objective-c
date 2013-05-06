@@ -11,4 +11,5 @@
 - (NSInteger)   recipeCount;
 - (O2JSRecipe*) recipeAtIndex:(NSInteger)index;
 - (void)        deleteRecipeAtIndex:(NSInteger)index;
+- (O2JSRecipe *)createNewRecipe;
 @end
